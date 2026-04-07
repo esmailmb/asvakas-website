@@ -42,11 +42,24 @@ if (contactForm) {
     });
 
     try {
+      /* Render free tier can take ~60s to wake up — show a hint after 8s */
+      const wakeTimer = setTimeout(function () {
+        if (submitBtn) submitBtn.textContent = "Waking up server… (~60s first time)";
+      }, 8000);
+
+      const controller = new AbortController();
+      const hardTimeout = setTimeout(function () { controller.abort(); }, 120000);
+
       const res = await fetch("https://asvakas-backend.onrender.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
+        signal: controller.signal
       });
+
+      clearTimeout(wakeTimer);
+      clearTimeout(hardTimeout);
+
       const json = await res.json();
       if (res.ok && json.ok) {
         contactForm.style.display = "none";
@@ -55,11 +68,14 @@ if (contactForm) {
         throw new Error(json.error || "Submission failed");
       }
     } catch (err) {
+      const msg = err.name === "AbortError"
+        ? "Request timed out. Please try again or email us directly at info@asvakas.com"
+        : "Sorry, your message could not be sent. Please email us directly at info@asvakas.com";
       if (submitBtn) {
         submitBtn.disabled = false;
         submitBtn.textContent = "Send Message \u2192";
       }
-      alert("Sorry, your message could not be sent. Please email us directly at info@asvakas.com");
+      alert(msg);
     }
   });
 }
