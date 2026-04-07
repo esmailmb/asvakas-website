@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy &amp; Terms of Use | Asvakas Engineering Canada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="canada.css" />
+    <style>
+      .privacy-hero {
+        background: var(--navy, #141e2d);
+        padding: 9rem 0 4rem;
+        text-align: center;
+        color: #fff;
+      }
+      .privacy-hero .pill {
+        background: rgba(255,255,255,0.12);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.2);
+        display: inline-block;
+        border-radius: 2rem;
+        padding: 0.35rem 1rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 1.25rem;
+      }
+      .privacy-hero h1 {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 0.75rem;
+      }
+      .privacy-hero p {
+        color: rgba(255,255,255,0.65);
+        font-size: 1rem;
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      .privacy-body {
+        padding: 5rem 0 6rem;
+        background: #f8f9fb;
+      }
+      .privacy-wrap {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+      .privacy-toc {
+        background: #fff;
+        border: 1px solid #e3e7ef;
+        border-radius: 12px;
+        padding: 1.75rem 2rem;
+        margin-bottom: 3rem;
+      }
+      .privacy-toc h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--navy, #141e2d);
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+      .privacy-toc ol {
+        margin: 0;
+        padding-left: 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem 2rem;
+      }
+      .privacy-toc ol li a {
+        color: var(--accent, #e85325);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .privacy-toc ol li a:hover { text-decoration: underline; }
+      .privacy-section {
+        background: #fff;
+        border: 1px solid #e3e7ef;
+        border-radius: 12px;
+        padding: 2rem 2.25rem;
+        margin-bottom: 1.5rem;
+      }
+      .privacy-section h2 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        color: var(--navy, #141e2d);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .privacy-section h2 .sec-num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.85rem;
+        height: 1.85rem;
+        background: var(--accent, #e85325);
+        color: #fff;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .privacy-section p {
+        color: #4f5968;
+        line-height: 1.8;
+        font-size: 0.95rem;
+        margin-bottom: 0.85rem;
+      }
+      .privacy-section p:last-child { margin-bottom: 0; }
+      .privacy-section ul {
+        margin: 0.5rem 0 0.85rem 1.25rem;
+        color: #4f5968;
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
+      .privacy-section ul li { margin-bottom: 0.3rem; }
+      .privacy-section a { color: var(--accent, #e85325); }
+      .privacy-updated {
+        text-align: center;
+        color: #9aa3b0;
+        font-size: 0.85rem;
+        margin-top: 2.5rem;
+      }
+      /* Keep header solid regardless of scroll state */
+      .site-header {
+        position: fixed;
+        background: #f3f4f6;
+        border-top: 1px solid #dfe3e9;
+        border-bottom: 1px solid #dfe3e9;
+        box-shadow: 0 4px 18px rgba(32, 47, 68, 0.08);
+      }
+      @media (max-width: 600px) {
+        .privacy-toc ol { grid-template-columns: 1fr; }
+        .privacy-section { padding: 1.5rem 1.25rem; }
+      }
+    </style>
+  </head>
+  <body class="about-page">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Asvakas<span class="brand-eng" data-i18n="brand.eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+        </nav>
+        <div class="lang-toggle">
+          <button class="lang-opt active" data-lang="en">EN</button>
+          <button class="lang-opt" data-lang="fr">FR</button>
+        </div>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="rp-flag">🇨🇦</span>
+            <span class="rp-label">Canada</span>
+            <span class="rp-arrow">▾</span>
+          </button>
+          <ul class="rp-dropdown" role="listbox">
+            <li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li>
+            <li class="rp-option active" data-region="canada" role="option">🇨🇦 Canada</li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="privacy-hero">
+        <div class="container">
+          <span class="pill" data-i18n="privacy.pill">Legal</span>
+          <h1 data-i18n="privacy.h1">Privacy Policy &amp; Terms of Use</h1>
+          <p data-i18n="privacy.sub">How we collect, use, and protect your information — and the terms governing your use of our website.</p>
+        </div>
+      </section>
+
+      <section class="privacy-body">
+        <div class="privacy-wrap">
+
+          <div class="privacy-toc">
+            <h2 data-i18n="privacy.toc.h">Contents</h2>
+            <ol>
+              <li><a href="#info-collect" data-i18n="privacy.toc.1">Information We Collect</a></li>
+              <li><a href="#how-use" data-i18n="privacy.toc.2">How We Use Your Information</a></li>
+              <li><a href="#sharing" data-i18n="privacy.toc.3">Sharing of Information</a></li>
+              <li><a href="#cookies" data-i18n="privacy.toc.4">Cookies &amp; Tracking</a></li>
+              <li><a href="#security" data-i18n="privacy.toc.5">Data Security</a></li>
+              <li><a href="#retention" data-i18n="privacy.toc.6">Data Retention</a></li>
+              <li><a href="#rights" data-i18n="privacy.toc.7">Your Rights</a></li>
+              <li><a href="#third-party" data-i18n="privacy.toc.8">Third-Party Links</a></li>
+              <li><a href="#terms" data-i18n="privacy.toc.9">Terms of Use</a></li>
+              <li><a href="#contact-us" data-i18n="privacy.toc.10">Contact Us</a></li>
+            </ol>
+          </div>
+
+          <div class="privacy-section" id="info-collect">
+            <h2><span class="sec-num">1</span> <span data-i18n="privacy.s1.h">Information We Collect</span></h2>
+            <p data-i18n="privacy.s1.p1">We collect information you voluntarily provide when you contact us, submit a project inquiry, or subscribe to our newsletter. This may include:</p>
+            <ul data-i18n="privacy.s1.ul">
+              <li>Name, email address, and phone number</li>
+              <li>Company name and project location</li>
+              <li>Message content and project details</li>
+              <li>Email address for newsletter subscription</li>
+            </ul>
+            <p data-i18n="privacy.s1.p2">We also automatically collect certain technical information when you visit our website, including your IP address, browser type, pages visited, and time spent on pages, through standard server logs and analytics tools.</p>
+          </div>
+
+          <div class="privacy-section" id="how-use">
+            <h2><span class="sec-num">2</span> <span data-i18n="privacy.s2.h">How We Use Your Information</span></h2>
+            <p data-i18n="privacy.s2.p1">Information you provide is used solely to respond to your inquiries, provide engineering services, send requested updates, and improve our website. Specifically:</p>
+            <ul data-i18n="privacy.s2.ul">
+              <li>To respond to project inquiries and quote requests</li>
+              <li>To deliver email newsletters you have subscribed to</li>
+              <li>To maintain and improve our website performance</li>
+              <li>To comply with applicable Canadian legal and regulatory obligations</li>
+            </ul>
+            <p data-i18n="privacy.s2.p2">We do not sell, rent, or trade your personal information to third parties for their marketing purposes.</p>
+          </div>
+
+          <div class="privacy-section" id="sharing">
+            <h2><span class="sec-num">3</span> <span data-i18n="privacy.s3.h">Sharing of Information</span></h2>
+            <p data-i18n="privacy.s3.p">We do not share your personal information except in the following limited circumstances:</p>
+            <ul data-i18n="privacy.s3.ul">
+              <li><strong>Service providers:</strong> Trusted vendors who assist in operating our website or business (e.g., email delivery, hosting), bound by confidentiality agreements.</li>
+              <li><strong>Legal obligations:</strong> When required by law, court order, or government authority.</li>
+              <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of assets, with prior notice to affected users.</li>
+            </ul>
+          </div>
+
+          <div class="privacy-section" id="cookies">
+            <h2><span class="sec-num">4</span> <span data-i18n="privacy.s4.h">Cookies &amp; Tracking</span></h2>
+            <p data-i18n="privacy.s4.p1">Our website uses cookies and similar technologies to enhance your browsing experience and gather analytics. These include:</p>
+            <ul data-i18n="privacy.s4.ul">
+              <li><strong>Essential cookies:</strong> Required for core site functionality such as language preference.</li>
+              <li><strong>Analytics cookies:</strong> Help us understand how visitors interact with our site (e.g., Google Analytics).</li>
+            </ul>
+            <p data-i18n="privacy.s4.p2">You may disable cookies through your browser settings, though some functionality may be limited as a result.</p>
+          </div>
+
+          <div class="privacy-section" id="security">
+            <h2><span class="sec-num">5</span> <span data-i18n="privacy.s5.h">Data Security</span></h2>
+            <p data-i18n="privacy.s5.p">We implement reasonable technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of internet transmission or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+          </div>
+
+          <div class="privacy-section" id="retention">
+            <h2><span class="sec-num">6</span> <span data-i18n="privacy.s6.h">Data Retention</span></h2>
+            <p data-i18n="privacy.s6.p">We retain personal information only for as long as necessary to fulfill the purposes described in this policy, or as required by applicable law. Contact inquiry data is typically retained for up to 3 years. You may request deletion of your data at any time by contacting us.</p>
+          </div>
+
+          <div class="privacy-section" id="rights">
+            <h2><span class="sec-num">7</span> <span data-i18n="privacy.s7.h">Your Rights</span></h2>
+            <p data-i18n="privacy.s7.p1">Under Canadian privacy law (PIPEDA and provincial laws), you have the right to:</p>
+            <ul data-i18n="privacy.s7.ul">
+              <li>Access the personal information we hold about you</li>
+              <li>Request correction of inaccurate information</li>
+              <li>Request deletion of your personal information</li>
+              <li>Withdraw consent to our use of your information</li>
+              <li>Opt out of any email communications at any time</li>
+            </ul>
+            <p data-i18n="privacy.s7.p2">To exercise any of these rights, please contact us at <a href="mailto:info@asvakas.com">info@asvakas.com</a>.</p>
+          </div>
+
+          <div class="privacy-section" id="third-party">
+            <h2><span class="sec-num">8</span> <span data-i18n="privacy.s8.h">Third-Party Links</span></h2>
+            <p data-i18n="privacy.s8.p">Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any external sites you visit.</p>
+          </div>
+
+          <div class="privacy-section" id="terms">
+            <h2><span class="sec-num">9</span> <span data-i18n="privacy.s9.h">Terms of Use</span></h2>
+            <p data-i18n="privacy.s9.p1">By accessing or using this website, you agree to the following terms:</p>
+            <ul data-i18n="privacy.s9.ul">
+              <li>All content on this site — including text, images, graphics, and designs — is the property of Asvakas Inc. and protected by applicable intellectual property laws. Reproduction without written permission is prohibited.</li>
+              <li>This website is provided for informational purposes only. Nothing on this site constitutes professional engineering advice for a specific project without a formal engagement.</li>
+              <li>We reserve the right to modify or discontinue any part of this website at any time without notice.</li>
+              <li>You agree not to use this website for any unlawful purpose or in a way that could damage, disable, or impair the site.</li>
+            </ul>
+            <p data-i18n="privacy.s9.p2">These terms are governed by the laws of the Province of Ontario and the federal laws of Canada. Any disputes shall be resolved in the courts of Ontario.</p>
+          </div>
+
+          <div class="privacy-section" id="contact-us">
+            <h2><span class="sec-num">10</span> <span data-i18n="privacy.s10.h">Contact Us</span></h2>
+            <p data-i18n="privacy.s10.p1">For questions about this Privacy Policy or our data practices, please contact:</p>
+            <p data-i18n="privacy.s10.p2"><strong>Asvakas Inc.</strong><br />Email: <a href="mailto:info@asvakas.com">info@asvakas.com</a><br />Website: <a href="contact.html">asvakas.com/contact</a></p>
+          </div>
+
+          <p class="privacy-updated" data-i18n="privacy.updated">Last updated: April 2026</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-body">
+        <div class="container footer-top">
+          <div class="footer-brand-col">
+            <a href="index.html#top" class="footer-brand"><span class="footer-brand-icon"></span>Asvakas Inc</a>
+            <h4 class="footer-sub-heading" data-i18n="footer.sub.h">Subscribe for Updates</h4>
+            <p class="footer-sub-text" data-i18n="footer.sub">Get engineering insights, Canadian compliance updates, and industry news delivered to your inbox.</p>
+            <form class="footer-subscribe" onsubmit="return false;"><input type="email" placeholder="Enter your email address" aria-label="Email" /><button type="submit" data-i18n="footer.sub.btn">Subscribe</button></form>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col">
+              <h5 data-i18n="footer.col1.h">Company</h5>
+              <ul>
+                <li><a href="index.html" data-i18n="footer.link.home">Home</a></li>
+                <li><a href="about.html" data-i18n="footer.link.about">About</a></li>
+                <li><a href="services.html" data-i18n="footer.link.services">Services</a></li>
+                <li><a href="projects.html" data-i18n="footer.link.projects">Projects</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 data-i18n="footer.col2.h">Social Media</h5>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter/X</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 data-i18n="footer.col3.h">Support</h5>
+              <ul>
+                <li><a href="blog/index.html" data-i18n="footer.link.blog">Blog</a></li>
+                <li><a href="faq.html" data-i18n="footer.link.faq">FAQ</a></li>
+                <li><a href="blog/index.html" data-i18n="footer.link.help">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span data-i18n="footer.copy">© 2026 Asvakas Inc. All Rights Reserved.</span>
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy &amp; Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../region.js"></script>
+    <script src="lang.js"></script>
+    <script>
+      document.getElementById('navToggle').addEventListener('click', () => {
+        document.getElementById('mainNav').classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

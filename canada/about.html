@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Asvakas Engineering Canada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../about.css" />
+    <link rel="stylesheet" href="canada.css" />
+  </head>
+  <body class="about-page">
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Asvakas<span class="brand-eng" data-i18n="brand.eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" class="active" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+        </nav>
+        <div class="lang-toggle">
+          <button class="lang-opt active" data-lang="en">EN</button>
+          <button class="lang-opt" data-lang="fr">FR</button>
+        </div>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="rp-flag">🇨🇦</span>
+            <span class="rp-label">Canada</span>
+            <span class="rp-arrow">▾</span>
+          </button>
+          <ul class="rp-dropdown" role="listbox">
+            <li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li>
+            <li class="rp-option active" data-region="canada" role="option">🇨🇦 Canada</li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Hero -->
+      <section class="about-hero">
+        <div class="container about-hero-content">
+          <span class="about-hero-label fade-up" data-i18n="about.hero.label">About Asvakas</span>
+          <h1 class="fade-up" style="--delay:0.12s" data-i18n="about.hero.h1">Engineers Committed<br>to Canadian Excellence</h1>
+          <p class="fade-up" style="--delay:0.24s" data-i18n="about.hero.p">Structural integrity, OBC compliance, and lasting results for every project across Canada.</p>
+        </div>
+        <img
+          class="about-hero-photo fade-up"
+          style="--delay:0.36s"
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1600&q=80"
+          alt="Asvakas ENG — Canada Structural Engineering"
+        />
+      </section>
+
+      <!-- Stats -->
+      <section class="about-stats-section">
+        <div class="container about-stats-inner">
+          <span class="section-label-pill fade-up" data-i18n="about.stats.label">Our Numbers</span>
+          <h2 class="about-stats-headline fade-up" style="--delay:0.12s" data-i18n="about.stats.h2">Our track record reflects our <span class="accent">commitment</span> to quality, safety, and client satisfaction</h2>
+          <div class="about-stats-grid">
+            <div class="about-stat fade-up" style="--delay:0.10s">
+              <strong data-count="20">0</strong>
+              <span data-i18n="about.stats.years">Years Combined Experience</span>
+            </div>
+            <div class="about-stat fade-up" style="--delay:0.22s">
+              <strong data-count="500">0</strong>
+              <span data-i18n="stat.proj">Projects Completed</span>
+            </div>
+            <div class="about-stat fade-up" style="--delay:0.34s">
+              <strong data-count="98">0</strong>
+              <span data-i18n="stat.sat">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Story -->
+      <section class="section about-story-section">
+        <div class="container about-story-inner">
+          <div class="about-story-top">
+            <span class="section-label-pill fade-up" data-i18n="about.story.label">Our Story</span>
+            <h2 class="fade-up" style="--delay:0.12s" data-i18n="about.story.h2">New Company, Decades of Know-How</h2>
+          </div>
+          <div class="about-story-body">
+            <div class="about-story-image slide-left">
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
+                alt="Asvakas Engineering Canada team at work"
+              />
+            </div>
+            <div class="about-story-text">
+              <p class="fade-up" data-i18n="about.story.p1">Asvakas Inc. was founded on one premise: that clients deserve engineering talent without the overhead of large firms. Our leadership brings decades of experience across structural design, OBC compliance inspections, and temporary works — applied now through a lean, client-focused practice.</p>
+              <p class="fade-up" style="--delay:0.1s" data-i18n="about.story.p2">We serve property owners, contractors, developers, and municipalities from our Toronto office, delivering code-compliant engineering that stands the test of time. We are registered with Professional Engineers Ontario (PEO).</p>
+              <div class="about-story-values">
+                <div class="about-value fade-up" style="--delay:0.1s">
+                  <div class="about-value-icon">
+                    <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" /></svg>
+                  </div>
+                  <div>
+                    <h4 data-i18n="about.val1.h">Client Commitment</h4>
+                    <p data-i18n="about.val1.p">Strong buildings start with strong relationships. We prioritize trust, clear communication, and keeping our promises.</p>
+                  </div>
+                </div>
+                <div class="about-value fade-up" style="--delay:0.22s">
+                  <div class="about-value-icon">
+                    <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35"/></svg>
+                  </div>
+                  <div>
+                    <h4 data-i18n="about.val2.h">Integrity in Every Detail</h4>
+                    <p data-i18n="about.val2.p">We build with honesty and care, ensuring quality and transparency from start to finish.</p>
+                  </div>
+                </div>
+                <div class="about-value about-value--last fade-up" style="--delay:0.34s">
+                  <div class="about-value-icon">
+                    <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                  </div>
+                  <div>
+                    <h4 data-i18n="about.val3.h">Innovation-Driven</h4>
+                    <p data-i18n="about.val3.p">We adopt smart technologies and sustainable methods to improve efficiency and results.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="about-intro-section">
+        <div class="about-intro-content">
+          <span class="about-intro-pill fade-up" data-i18n="about.intro.pill">Our Introduction</span>
+          <h2 class="fade-up" style="--delay:0.12s" data-i18n="about.intro.h2">See How We Build</h2>
+          <p class="fade-up" style="--delay:0.24s" data-i18n="about.intro.p">Watch our story unfold from blueprints to reality, and the passion behind every project.</p>
+        </div>
+        <div class="about-intro-video-wrap fade-up" style="--delay:0.3s">
+          <iframe
+            class="about-intro-video"
+            src="https://www.youtube.com/embed/DJmR8PRKPus?rel=0"
+            title="See How We Build"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section class="section about-team-section">
+        <div class="container">
+          <div class="about-team-header">
+            <span class="section-label-pill fade-up" data-i18n="about.team.label">Our People</span>
+            <h2 class="fade-up" style="--delay:0.1s" data-i18n="about.team.h2">Meet the Team</h2>
+            <p class="about-team-sub fade-up" style="--delay:0.2s" data-i18n="about.team.sub">Seasoned structural engineers with deep expertise in OBC compliance and complex structural challenges across Canada.</p>
+          </div>
+          <div class="about-team-grid">
+            <div class="about-team-card fade-up" style="--delay:0.05s">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Principal Engineer" />
+              <h4>Farhad Asvakas</h4>
+              <span data-i18n="about.role.principal">Principal Structural Engineer</span>
+            </div>
+            <div class="about-team-card fade-up" style="--delay:0.15s">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Senior Engineer" />
+              <h4>Sara Mashari</h4>
+              <span data-i18n="about.role.senior">Senior Structural Engineer</span>
+            </div>
+            <div class="about-team-card fade-up" style="--delay:0.25s">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="OBC Compliance Lead" />
+              <h4>James Okafor</h4>
+              <span data-i18n="about.role.obc">OBC Compliance Lead</span>
+            </div>
+            <div class="about-team-card fade-up" style="--delay:0.10s">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Project Engineer" />
+              <h4>Anika Patel</h4>
+              <span data-i18n="about.role.project">Project Engineer</span>
+            </div>
+            <div class="about-team-card fade-up" style="--delay:0.20s">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Temporary Works Engineer" />
+              <h4>Luca Ferraro</h4>
+              <span data-i18n="about.role.temp">Temporary Works Engineer</span>
+            </div>
+            <div class="about-team-card fade-up" style="--delay:0.30s">
+              <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?auto=format&fit=crop&w=400&q=80" alt="Operations Lead" />
+              <h4>Grace Kim</h4>
+              <span data-i18n="about.role.ops">Operations &amp; Client Lead</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="about-projects-section">
+        <div class="container about-projects-inner">
+          <div class="about-projects-left slide-left">
+            <div class="about-projects-left-top">
+              <span class="section-label-pill" data-i18n="about.proj.label">Projects</span>
+              <h2 data-i18n="about.proj.h2">Our Real World Work in Action</h2>
+              <p data-i18n="about.proj.p">Browse through some of our proudest builds and transformations across Canada.</p>
+            </div>
+            <a href="projects.html" class="about-projects-btn" data-i18n="about.proj.btn">Explore More Projects &rarr;</a>
+          </div>
+          <div class="about-projects-right">
+            <div class="about-project-card slide-right" style="--delay:0.1s">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="King St Tower" />
+              <div class="about-project-card-info">
+                <h4>King St Tower</h4>
+                <a href="projects.html" data-i18n="proj.see.btn">See Details →</a>
+              </div>
+            </div>
+            <div class="about-project-card slide-right" style="--delay:0.25s">
+              <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80" alt="Mississauga Complex" />
+              <div class="about-project-card-info">
+                <h4>Mississauga Complex</h4>
+                <a href="projects.html" data-i18n="proj.see.btn">See Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mini CTA -->
+      <section class="about-mini-cta">
+        <div class="about-mini-left">
+          <h2 data-i18n="about.mini.h2">Ready to Work With Our Team?</h2>
+          <p data-i18n="about.mini.p">From OBC compliance to full structural design — our engineers will prepare a tailored plan aligned with your timeline.</p>
+          <a href="contact.html" class="about-mini-btn" data-i18n="about.mini.btn">Start a Conversation →</a>
+        </div>
+        <div class="about-mini-right">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80" alt="Structural engineering work" />
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-body">
+        <div class="container footer-top">
+          <div class="footer-brand-col">
+            <a href="index.html#top" class="footer-brand"><span class="footer-brand-icon"></span>Asvakas Inc</a>
+            <h4 class="footer-sub-heading" data-i18n="footer.sub.h">Subscribe for Updates</h4>
+            <p class="footer-sub-text" data-i18n="footer.sub">Get engineering insights, Canadian compliance updates, and industry news delivered to your inbox.</p>
+            <form class="footer-subscribe" onsubmit="return false;"><input type="email" placeholder="Enter your email address" aria-label="Email" /><button type="submit" data-i18n="footer.sub.btn">Subscribe</button></form>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col"><h5 data-i18n="footer.col1.h">Company</h5><ul><li><a href="index.html" data-i18n="footer.link.home">Home</a></li><li><a href="about.html" data-i18n="footer.link.about">About</a></li><li><a href="services.html" data-i18n="footer.link.services">Services</a></li><li><a href="projects.html" data-i18n="footer.link.projects">Projects</a></li></ul></div>
+            <div class="footer-col"><h5 data-i18n="footer.col2.h">Social Media</h5><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">Twitter/X</a></li></ul></div>
+            <div class="footer-col"><h5 data-i18n="footer.col3.h">Support</h5><ul><li><a href="blog/index.html" data-i18n="footer.link.blog">Blog</a></li><li><a href="faq.html" data-i18n="footer.link.faq">FAQ</a></li><li><a href="blog/index.html" data-i18n="footer.link.help">Help Center</a></li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><div class="container footer-bottom-inner"><span data-i18n="footer.copy">© 2026 Asvakas Inc. All Rights Reserved.</span><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy &amp; Terms of Use</a></div></div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      // Scroll-triggered animations
+      const animObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            animObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.fade-up, .slide-left, .slide-right').forEach(el => animObserver.observe(el));
+
+      // Stat counter animation
+      function animateCount(el, target, suffix) {
+        const duration = 1400;
+        const start = performance.now();
+        const update = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(update);
+          else el.textContent = target + suffix;
+        };
+        requestAnimationFrame(update);
+      }
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const stats = entry.target.querySelectorAll('[data-count]');
+            const sfxList = ['+', '+', '%'];
+            stats.forEach((el, i) => {
+              animateCount(el, parseInt(el.dataset.count), sfxList[i]);
+            });
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      const statsGrid = document.querySelector('.about-stats-grid');
+      if (statsGrid) counterObserver.observe(statsGrid);
+    </script>
+    <script src="../region.js"></script>
+    <script src="lang.js"></script>
+  </body>
+</html>

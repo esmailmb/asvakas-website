@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asvakas Engineering</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="home-page">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand">Asvakas<span class="brand-eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="#home">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="rp-flag">🇺🇸</span>
+            <span class="rp-label">USA</span>
+            <span class="rp-arrow">▾</span>
+          </button>
+          <ul class="rp-dropdown" role="listbox">
+            <li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li>
+            <li class="rp-option" data-region="canada" role="option">🇨🇦 Canada</li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-slides">
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1800&q=80')"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80')"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1800&q=80')"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1800&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="hero-tag fade-up" data-region-tag>NYC Structural Engineering</p>
+          <h1 class="fade-up" style="--delay:0.13s">Built on Precision.<br>Delivered with Integrity.</h1>
+          <p class="fade-up" style="--delay:0.26s" data-region-sub>Asvakas Engineering helps owners and developers deliver safer, smarter projects across New York City.</p>
+          <div class="hero-actions fade-up" style="--delay:0.38s">
+            <a class="btn btn-solid" href="#services">Request Inspection</a>
+            <a class="btn btn-outline" href="services.html">Explore Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-inner">
+          <div class="slide-left">
+            <span class="section-label">About Asvakas</span>
+            <h2>New company, decades of proven structural experience behind every project.</h2>
+            <p>As a startup firm built by seasoned engineers, Asvakas delivers fresh solutions with deep construction and design expertise, plus modern client service.</p>
+            <a class="btn btn-outline" href="#services">Get to Know Us</a>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card fade-up" style="--delay:0.05s"><strong data-target="20" data-suffix="+">20+</strong><span>Years Experience</span></div>
+            <div class="stat-card fade-up" style="--delay:0.15s"><strong data-target="150" data-suffix="+">150+</strong><span>Projects Completed</span></div>
+            <div class="stat-card fade-up" style="--delay:0.25s"><strong>4.8/5</strong><span>Client Satisfaction</span></div>
+            <div class="stat-card fade-up" style="--delay:0.35s"><strong data-target="98" data-suffix="%">98%</strong><span>Success Rate</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="container svc-header">
+          <span class="section-label-pill fade-up">Our Services</span>
+          <h2 class="fade-up" style="--delay:0.1s">We Build Everything You Need</h2>
+          <p class="services-subtitle fade-up" style="--delay:0.2s">From temporary works and structural design to NYC local law compliance — our engineers deliver precision across every discipline.</p>
+        </div>
+
+        <div class="container svc-category">
+          <p class="svc-cat-label fade-up">Structural Engineering</p>
+          <div class="services-grid">
+            <article class="service-card fade-up" style="--delay:0.05s">
+              <span class="svc-num">01</span>
+              <h3>Structural Renovation</h3>
+              <p>Repair, renovation, addition, opening, steel and concrete fixes, and masonry rehab.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=900&q=80" alt="Structural renovation" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.15s">
+              <span class="svc-num">02</span>
+              <h3>Structural Design</h3>
+              <p>Wood, brick masonry, steel, concrete, townhouse, house, and composite structure design.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Structural design" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.25s">
+              <span class="svc-num">03</span>
+              <h3>Supervision & Consultancy</h3>
+              <p>Peer review, supervision, special inspection, assessment and damage evaluation.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80" alt="Engineering supervision and consultancy" />
+            </article>
+          </div>
+        </div>
+
+        <div class="container svc-category">
+          <p class="svc-cat-label fade-up">Local Law Inspections</p>
+          <div class="services-grid">
+            <article class="service-card fade-up" style="--delay:0.05s">
+              <span class="svc-num">04</span>
+              <h3>Facade Inspection</h3>
+              <p>Local Law 11 facade inspection, repair and DOB filing for code compliance.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80" alt="Facade inspection" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.15s">
+              <span class="svc-num">05</span>
+              <h3>Parking Garage Inspection</h3>
+              <p>Local Law 126 inspections, repair planning, and DOB filing.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?auto=format&fit=crop&w=900&q=80" alt="Parking garage inspection" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.25s">
+              <span class="svc-num">06</span>
+              <h3>Sidewalk Slab Renovation</h3>
+              <p>Sidewalk inspection, restoration, and repair with safe pedestrian solutions.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?auto=format&fit=crop&w=900&q=80" alt="Sidewalk slab renovation" />
+            </article>
+          </div>
+        </div>
+
+        <div class="container svc-category">
+          <p class="svc-cat-label fade-up">Temporary Works Engineering</p>
+          <div class="services-grid">
+            <article class="service-card fade-up" style="--delay:0.05s">
+              <span class="svc-num">07</span>
+              <h3>Bridge & Building Erection Plans</h3>
+              <p>Detailed erection staging, sequencing, and structural support design for buildings and bridges.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80" alt="Bridge and building erection plans" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.15s">
+              <span class="svc-num">08</span>
+              <h3>Water Diversion & Cofferdams</h3>
+              <p>Temporary works engineering for watercourse rerouting, cofferdam design and stabilization.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80" alt="Water diversion and cofferdam engineering" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.25s">
+              <span class="svc-num">09</span>
+              <h3>Bridge Demolition & Removal</h3>
+              <p>Safe, code-compliant bridge dismantling with detailed demolition methodology and logistics.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Bridge demolition and removal" />
+            </article>
+          </div>
+        </div>
+
+        <div class="container svc-category">
+          <p class="svc-cat-label fade-up">Specialty Engineering</p>
+          <div class="services-grid">
+            <article class="service-card fade-up" style="--delay:0.05s">
+              <span class="svc-num">10</span>
+              <h3>Roof Repair & Safety</h3>
+              <p>Roof dunnage, safety railings, parapets, bulkhead renovation, and roof system repair.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80" alt="Roof repair and safety" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.15s">
+              <span class="svc-num">11</span>
+              <h3>Anchorage & Connection</h3>
+              <p>Design of concrete anchors, steel/wood connections, brick masonry anchorage systems.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?auto=format&fit=crop&w=900&q=80" alt="Anchorage and connection engineering" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.25s">
+              <span class="svc-num">12</span>
+              <h3>Formwork Design</h3>
+              <p>Slab formwork, sidewalk overhead protection, and renovation formwork engineering.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80" alt="Formwork design" />
+            </article>
+          </div>
+        </div>
+        <div class="container svc-category">
+          <p class="svc-cat-label fade-up">Forensic Engineering</p>
+          <div class="services-grid">
+            <article class="service-card fade-up" style="--delay:0.05s">
+              <span class="svc-num">13</span>
+              <h3>Forensic Structural Investigation</h3>
+              <p>On-site investigation of structural distress, collapse, or unexpected movement to determine root cause.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80" alt="Forensic structural investigation" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.15s">
+              <span class="svc-num">14</span>
+              <h3>Failure Analysis &amp; Expert Reports</h3>
+              <p>Detailed technical analysis of structural failures for insurance claims, legal proceedings, and code compliance disputes.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Failure analysis" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.25s">
+              <span class="svc-num">15</span>
+              <h3>Expert Witness &amp; Testimony</h3>
+              <p>Professional engineering testimony and expert witness services for construction litigation and arbitration proceedings.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=900&q=80" alt="Expert witness" />
+            </article>
+          </div>
+        </div>
+        <div class="container svc-category">
+          <p class="svc-cat-label fade-up">Construction Services</p>
+          <div class="services-grid">
+            <article class="service-card fade-up" style="--delay:0.05s">
+              <span class="svc-num">16</span>
+              <h3>Cost Estimation</h3>
+              <p>Accurate quantity takeoffs and cost projections for structural scopes, helping owners and contractors budget with confidence.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="Cost estimation" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.15s">
+              <span class="svc-num">17</span>
+              <h3>Project Scheduling</h3>
+              <p>Comprehensive construction schedules and critical path analysis to keep complex structural projects on track.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80" alt="Project scheduling" />
+            </article>
+            <article class="service-card fade-up" style="--delay:0.25s">
+              <span class="svc-num">18</span>
+              <h3>Construction Administration</h3>
+              <p>On-site engineering oversight and shop drawing review throughout construction to ensure structural compliance.</p>
+              <img class="svc-img" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=900&q=80" alt="Construction administration" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why-section">
+        <div class="container why-inner">
+          <div class="why-left slide-left">
+            <span class="section-label-pill">Our Great Values</span>
+            <h2 class="why-heading">Why Asvakas?</h2>
+            <a class="btn btn-outline" href="#about">Get to Know Us &rarr;</a>
+          </div>
+          <div class="why-right">
+            <p class="why-tagline fade-up">Trusted by property owners and developers across NYC, built for precision, and designed to deliver reliable structural solutions that stand the test of time.</p>
+            <div class="why-grid">
+              <div class="why-card fade-up" style="--delay:0.05s">
+                <div class="why-icon">
+                  <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+                </div>
+                <h4>Proven Engineering Quality</h4>
+                <p>Our team brings 20+ years of combined engineering experience to every inspection, design, and renovation project.</p>
+              </div>
+              <div class="why-card fade-up" style="--delay:0.15s">
+                <div class="why-icon">
+                  <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h4>On-Time Delivery</h4>
+                <p>We value your deadlines — every DOB filing, inspection report, and design deliverable is completed on schedule.</p>
+              </div>
+              <div class="why-card fade-up" style="--delay:0.1s">
+                <div class="why-icon">
+                  <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                </div>
+                <h4>Safety First Approach</h4>
+                <p>We rigorously follow NYC code and OSHA standards to protect both your property and everyone on site.</p>
+              </div>
+              <div class="why-card fade-up" style="--delay:0.2s">
+                <div class="why-icon">
+                  <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                </div>
+                <h4>Modern Engineering Solutions</h4>
+                <p>Fresh perspectives backed by experience — we apply innovative methods to deliver efficient, cost-effective structural outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <div class="projects-header">
+            <h2 class="fade-up">Featured Projects</h2>
+            <p class="projects-subtext fade-up" style="--delay:0.12s">A closer look at our craftsmanship, showcasing quality in every project.</p>
+          </div>
+          <div class="project-slider-wrap slide-up">
+            <div class="slide-image-wrap">
+              <img class="slide-img" src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1400&q=80" alt="The Grand Oak Mansion" />
+              <p class="slide-caption">A meticulous restoration of a historic mansion, preserving its classic architecture while integrating modern amenities for a luxurious living experience.</p>
+            </div>
+            <div class="slide-info-panel">
+              <div class="slide-info-top">
+                <span class="slide-tag">Renovation</span>
+                <h3 class="slide-title">The Grand Oak<br>Mansion</h3>
+                <p class="slide-year">2025</p>
+                <p class="slide-client">Miller Estate</p>
+              </div>
+              <div class="slide-nav">
+                <button class="slide-nav-btn active" data-slide="0" aria-label="Project 1">
+                  <span class="slide-bar"></span>
+                  <span class="slide-num">01</span>
+                </button>
+                <button class="slide-nav-btn" data-slide="1" aria-label="Project 2">
+                  <span class="slide-bar"></span>
+                  <span class="slide-num">02</span>
+                </button>
+                <button class="slide-nav-btn" data-slide="2" aria-label="Project 3">
+                  <span class="slide-bar"></span>
+                  <span class="slide-num">03</span>
+                </button>
+                <button class="slide-nav-btn" data-slide="3" aria-label="Project 4">
+                  <span class="slide-bar"></span>
+                  <span class="slide-num">04</span>
+                </button>
+                <button class="slide-nav-btn" data-slide="4" aria-label="Project 5">
+                  <span class="slide-bar"></span>
+                  <span class="slide-num">05</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="container">
+          <div class="process-layout">
+            <div class="process-intro">
+              <span class="section-label-pill">How We Work</span>
+              <h2>Our Work Process</h2>
+              <p>A proven process to bring your ideas to life turns concepts into reality through strategic planning and execution.</p>
+            </div>
+            <div class="process-steps">
+              <article class="process-step">
+                <p class="process-step-count"><strong>01</strong><span>/03</span><i aria-hidden="true">→</i></p>
+                <h3>Consultation & Planning</h3>
+                <p>Understanding your needs, budget, and vision ensures your project aligns with your goals while staying within practical limits.</p>
+              </article>
+              <article class="process-step">
+                <p class="process-step-count"><strong>02</strong><span>/03</span><i aria-hidden="true">→</i></p>
+                <h3>Design & Architecture</h3>
+                <p>Visualizing the project with practical design and structural precision aligns aesthetics, function, and code compliance.</p>
+              </article>
+              <article class="process-step">
+                <p class="process-step-count"><strong>03</strong><span>/03</span><i aria-hidden="true">→</i></p>
+                <h3>Construction & Management</h3>
+                <p>From site coordination to quality control, we guide execution with consistency so the final build meets every requirement.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-section" id="testimonials">
+        <div class="container">
+          <div class="testimonial-head">
+            <div class="testimonial-head-copy fade-up">
+              <span class="section-label-pill">Testimonials</span>
+              <h2>What Our Clients Say</h2>
+              <p class="testimonial-subtext">Hear from teams who built with us and how we translated complex engineering requirements into results.</p>
+            </div>
+            <div class="testimonial-controls" aria-label="Testimonial controls">
+              <button class="testimonial-btn testimonial-prev" type="button" aria-label="Previous testimonial">&#8592;</button>
+              <button class="testimonial-btn testimonial-next" type="button" aria-label="Next testimonial">&#8594;</button>
+            </div>
+          </div>
+
+          <div class="testimonial-slider">
+            <div class="testimonial-track">
+              <article class="testimonial-card">
+                <p class="testimonial-quote-mark" aria-hidden="true">“</p>
+                <p class="testimonial-quote">Asvakas exceeded all expectations. Their team turned a difficult compliance scope into a smooth, well-managed delivery.</p>
+                <p class="testimonial-body">From initial inspection to final sign-off, communication was clear and every milestone was handled with precision.</p>
+                <p class="testimonial-author"><strong>Emily Santos</strong><span>Residential Client</span></p>
+              </article>
+
+              <article class="testimonial-card">
+                <p class="testimonial-quote-mark" aria-hidden="true">“</p>
+                <p class="testimonial-quote">From consultation to handover, their engineers were responsive, practical, and deeply knowledgeable.</p>
+                <p class="testimonial-body">They coordinated our office renovation with contractors and inspectors while keeping timeline risks under control.</p>
+                <p class="testimonial-author"><strong>Mark Li</strong><span>Commercial Developer</span></p>
+              </article>
+
+              <article class="testimonial-card">
+                <p class="testimonial-quote-mark" aria-hidden="true">“</p>
+                <p class="testimonial-quote">Their temporary works strategy saved us from major delays during excavation and underpinning.</p>
+                <p class="testimonial-body">The documentation was clean, permit-ready, and easy for our site team to execute without confusion.</p>
+                <p class="testimonial-author"><strong>Sophia Rivera</strong><span>General Contractor</span></p>
+              </article>
+
+              <article class="testimonial-card">
+                <p class="testimonial-quote-mark" aria-hidden="true">“</p>
+                <p class="testimonial-quote">We finally found an engineering partner that balances technical depth with real-world constructability.</p>
+                <p class="testimonial-body">Their team anticipated issues early and helped us make smarter decisions before costs escalated.</p>
+                <p class="testimonial-author"><strong>Daniel Brooks</strong><span>Property Manager</span></p>
+              </article>
+
+              <article class="testimonial-card">
+                <p class="testimonial-quote-mark" aria-hidden="true">“</p>
+                <p class="testimonial-quote">Inspection reporting and follow-up recommendations were clear, actionable, and built for compliance.</p>
+                <p class="testimonial-body">Asvakas gave us confidence that our facility upgrades were safe, code-aligned, and future-ready.</p>
+                <p class="testimonial-author"><strong>Priya Nair</strong><span>Facilities Director</span></p>
+              </article>
+            </div>
+          </div>
+
+          <div class="testimonial-dots" aria-label="Testimonial pagination"></div>
+        </div>
+      </section>
+
+      <section id="blog" class="section blog-section">
+        <div class="container">
+          <div class="blog-header">
+            <span class="section-label-pill fade-up">Blog</span>
+            <h2 class="fade-up" style="--delay:0.1s">Insights &amp; Updates</h2>
+            <p class="fade-up" style="--delay:0.2s">Explore trends, tips, and practical insights in structural engineering and construction execution.</p>
+          </div>
+
+          <div class="blog-layout">
+            <article class="blog-featured slide-left">
+              <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=1200&q=80" alt="Modern architectural building facade" />
+              <div class="blog-meta-row">
+                <span class="blog-pill">Client Guide</span>
+                <time datetime="2025-09-16">September 16, 2025</time>
+              </div>
+              <h3>Choosing the Right Contractor for Your Project</h3>
+              <p class="blog-author">Albert Sandy <span class="blog-dot" aria-hidden="true"></span> 10 minutes reading</p>
+            </article>
+
+            <div class="blog-list">
+              <article class="blog-item slide-right" style="--delay:0.1s">
+                <div class="blog-meta-row">
+                  <span class="blog-pill">Construction Tips</span>
+                  <time datetime="2025-09-16">September 16, 2025</time>
+                </div>
+                <h3>How to Plan Your Commercial Build Effectively and Efficiently</h3>
+                <p class="blog-author">Albert Sandy <span class="blog-dot" aria-hidden="true"></span> 5 minutes reading</p>
+              </article>
+
+              <article class="blog-item slide-right" style="--delay:0.22s">
+                <div class="blog-meta-row">
+                  <span class="blog-pill">Green Building</span>
+                  <time datetime="2025-09-16">September 16, 2025</time>
+                </div>
+                <h3>Why Sustainable and Efficient Building Matters in 2025</h3>
+                <p class="blog-author">Jordy Alba <span class="blog-dot" aria-hidden="true"></span> 7 minutes reading</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-body">
+        <div class="container footer-top">
+          <div class="footer-brand-col">
+            <a href="#top" class="footer-brand">
+              <span class="footer-brand-icon"></span>
+              Asvakas Inc
+            </a>
+            <h4 class="footer-sub-heading">Subscribe for Updates</h4>
+            <p class="footer-sub-text">Get engineering insights, NYC compliance updates, and industry news delivered to your inbox.</p>
+            <form class="footer-subscribe" onsubmit="return false;">
+              <input type="email" placeholder="Enter your email address" aria-label="Email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#process">Process</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Social Media</h5>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter/X</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog/index.html">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span>© 2026 Asvakas Inc. All Rights Reserved.</span>
+          <a href="privacy-policy.html">Privacy Policy &amp; Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const animObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            animObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.fade-up, .slide-left, .slide-right, .slide-up').forEach(el => animObserver.observe(el));
+
+      /* ── Hero background slideshow ── */
+      (function () {
+        const slides = document.querySelectorAll('.hero-slide');
+        let current = Math.floor(Math.random() * slides.length);
+        slides[current].classList.add('active');
+        setInterval(() => {
+          slides[current].classList.remove('active');
+          current = (current + 1) % slides.length;
+          slides[current].classList.add('active');
+        }, 12000);
+      })();
+    </script>
+    <script src="region.js"></script>
+  </body>
+</html>

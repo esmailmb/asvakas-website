@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Asvakas Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body class="contact-page">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand">Asvakas<span class="brand-eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html#home">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="rp-flag">🇺🇸</span>
+            <span class="rp-label">USA</span>
+            <span class="rp-arrow">▾</span>
+          </button>
+          <ul class="rp-dropdown" role="listbox">
+            <li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li>
+            <li class="rp-option" data-region="canada" role="option">🇨🇦 Canada</li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro section">
+        <div class="container intro-wrap">
+          <span class="pill fade-up">Our Contact</span>
+          <h1 class="fade-up" style="--delay:0.12s">Let's Talk About Your Project</h1>
+          <p class="fade-up" style="--delay:0.24s">Whether you're planning, building, or renovating, we're here to help. Reach out today and let's build something exceptional together.</p>
+        </div>
+      </section>
+
+      <section class="contact-panel section" id="contact-form">
+        <div class="container panel-grid">
+          <div class="panel-left slide-left">
+            <span class="pill pill-light">Contact Details</span>
+            <h2>Let's Work Together</h2>
+            <p>Whether you have a question, need more details about our services, or want to discuss a potential collaboration, we're here to help.</p>
+
+            <div class="contact-lines two-col">
+              <div>
+                <h3>Message Us</h3>
+                <p>contact@asvakaseng.com</p>
+              </div>
+            </div>
+
+            <div class="contact-lines one-col">
+              <div>
+                <h3>Location</h3>
+                <p>15 West 38th Street<br />4th Floor<br />New York, NY 10018</p>
+              </div>
+            </div>
+
+            <div class="contact-lines one-col">
+              <div>
+                <h3>Business Hours</h3>
+                <p>Monday - Friday, 8:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 2:00 PM<br />Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-right slide-right">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form-grid" id="contactForm" novalidate>
+
+              <!-- ① Service selector -->
+              <label id="svcLabel" for="svcTrigger">Service Requested*</label>
+              <div class="svc-dropdown" id="svcDropdown" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="svcLabel">
+                <button type="button" class="svc-trigger" id="svcTrigger" aria-controls="svcPanel">
+                  <span class="svc-trigger-text svc-placeholder">— Select the service you need —</span>
+                  <svg class="svc-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <ul class="svc-panel" id="svcPanel" role="listbox" aria-labelledby="svcLabel">
+                  <li class="svc-group">
+                    <div class="svc-group-label">Inspections &amp; Assessments</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="fisp">Local Law 11 / FISP Façade Inspection</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="ll126">Local Law 126 / Parking Structure (PSIP)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="sidewalk-slab">Sidewalk Slab Renovation / Vault Engineering</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Design &amp; Construction</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="structural-design">Structural Design / New Construction</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="alteration">Structural Renovation / Alteration (Alt-1/2/3)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="supervision">Supervision &amp; Consultancy</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="underpinning">Underpinning / Foundation / Excavation Support</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="temporary-works">Temporary Works (Shoring, Formwork, Erection Plans)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="ca-si">Construction Administration / Special Inspections</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="construction-mgmt">Construction Management (Cost Estimation &amp; Scheduling)</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Renovation &amp; Restoration</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="building-openings">Building Openings / Structural Cuts (Windows, Doors, Passages)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="facade-renovation">Façade Renovation &amp; Restoration (FISP Remediation, Cladding)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="historic-restoration">Historic / Landmark Building Structural Restoration (LPC)</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Specialty Engineering</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="bridge-works">Bridge &amp; Infrastructure Engineering</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="roof-renovation">Roof Renovation / Replacement</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="specialty-engineering">Specialty Engineering (Anchorage, Formwork)</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Forensic &amp; Legal</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="forensic">Forensic Investigation / Expert Witness</button>
+                  </li>
+                  <li class="svc-standalone">
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="consultation">General Consultation / Other</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- Hidden native select keeps form value for mailto submission -->
+              <select id="serviceType" name="Service-Type" class="svc-hidden-select" required tabindex="-1" aria-hidden="true">
+                <option value=""></option>
+                <option value="fisp">Local Law 11 / FISP Façade Inspection</option>
+                <option value="ll126">Local Law 126 / Parking Structure (PSIP)</option>
+                <option value="sidewalk-slab">Sidewalk Slab Renovation / Vault Engineering</option>
+                <option value="structural-design">Structural Design / New Construction</option>
+                <option value="alteration">Structural Renovation / Alteration (Alt-1/2/3)</option>
+                <option value="supervision">Supervision &amp; Consultancy</option>
+                <option value="underpinning">Underpinning / Foundation / Excavation Support</option>
+                <option value="temporary-works">Temporary Works (Shoring, Formwork, Erection Plans)</option>
+                <option value="ca-si">Construction Administration / Special Inspections</option>
+                <option value="construction-mgmt">Construction Management (Cost Estimation &amp; Scheduling)</option>
+                <option value="specialty-engineering">Specialty Engineering (Anchorage, Formwork)</option>
+                <option value="bridge-works">Bridge &amp; Infrastructure Engineering</option>
+                <option value="roof-renovation">Roof Renovation / Replacement</option>
+                <option value="forensic">Forensic Investigation / Expert Witness</option>
+                <option value="building-openings">Building Openings / Structural Cuts</option>
+                <option value="facade-renovation">Façade Renovation &amp; Restoration</option>
+                <option value="historic-restoration">Historic / Landmark Building Restoration</option>
+                <option value="consultation">General Consultation / Other</option>
+              </select>
+
+              <!-- ② Dynamic field groups (shown based on service selection) -->
+
+              <!-- FISP / LL11 -->
+              <div class="dyn-group" data-group="fisp">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">📋 <strong>FISP / LL11 Façade Inspection</strong> — Asvakas inspects exterior walls and appurtenances as a QEWI and files TR8 reports with NYC DOB.</div>
+                  <label>Building Address (NYC)*</label>
+                  <input type="text" name="Building-Address" placeholder="e.g. 123 Main St, Brooklyn, NY 11201" required />
+                  <div class="split-inputs">
+                    <div>
+                      <label>Number of Stories*</label>
+                      <input type="number" name="Number-of-Stories" min="6" placeholder="e.g. 12" required />
+                    </div>
+                    <div>
+                      <label>Current FISP Cycle</label>
+                      <select name="FISP-Cycle">
+                        <option value="">Select...</option>
+                        <option>9th Cycle (ended 2024)</option>
+                        <option>10th Cycle (2025–2029)</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Previous FISP Report?</label>
+                      <select name="Previous-FISP-Report">
+                        <option value="">Select...</option>
+                        <option>Yes — available</option>
+                        <option>Yes — but lost</option>
+                        <option>No / First cycle</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Active SWARMP or UNSAFE Notice?</label>
+                      <select name="Active-SWARMP-UNSAFE">
+                        <option value="">Select...</option>
+                        <option>Yes — SWARMP</option>
+                        <option>Yes — UNSAFE</option>
+                        <option>No</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LL126 / Parking -->
+              <div class="dyn-group" data-group="ll126">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🅿️ <strong>Local Law 126 / PSIP</strong> — Parking structures require QPSI-led inspections every 6 years under the Parking Structure Inspection Program.</div>
+                  <label>Building Address*</label>
+                  <input type="text" name="Building-Address" placeholder="e.g. 500 West 33rd St, Manhattan, NY 10001" required />
+                  <div class="split-inputs">
+                    <div>
+                      <label>Structure Type*</label>
+                      <select name="Parking-Structure-Type" required>
+                        <option value="">Select...</option>
+                        <option>Above-grade deck</option>
+                        <option>Below-grade garage</option>
+                        <option>Both above and below grade</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Number of Levels</label>
+                      <input type="number" name="Number-of-Levels" min="1" placeholder="e.g. 4" />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Prior PSIP Inspection?</label>
+                      <select name="Prior-PSIP-Report">
+                        <option value="">Select...</option>
+                        <option>Yes — report available</option>
+                        <option>Yes — report not available</option>
+                        <option>No / First inspection</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Filing Deadline?</label>
+                      <select name="Filing-Deadline">
+                        <option value="">Select...</option>
+                        <option>Yes — upcoming</option>
+                        <option>No deadline pressure</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Structural Design -->
+              <div class="dyn-group" data-group="structural-design">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">📐 <strong>Structural Design / New Construction</strong> — Full structural design from concept through DOB-filed permit drawings and construction administration.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial / warehouse</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough / Location*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                        <option>Outside NYC (NY State)</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Approximate Square Footage</label>
+                      <select name="Approx-Sq-Footage">
+                        <option value="">Select...</option>
+                        <option>Under 2,000 sq ft</option>
+                        <option>2,000 – 5,000 sq ft</option>
+                        <option>5,000 – 15,000 sq ft</option>
+                        <option>15,000 – 50,000 sq ft</option>
+                        <option>Over 50,000 sq ft</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>DOB Permit Status</label>
+                      <select name="DOB-Permit-Status">
+                        <option value="">Select...</option>
+                        <option>Not yet started</option>
+                        <option>Pre-filing / design phase</option>
+                        <option>Filed — under review</option>
+                        <option>Permit issued</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Estimated Construction Start</label>
+                      <select name="Estimated-Start">
+                        <option value="">Select...</option>
+                        <option>ASAP</option>
+                        <option>1–3 months</option>
+                        <option>3–6 months</option>
+                        <option>6–12 months</option>
+                        <option>Planning phase only</option>
+                      </select>
+                    </div>
+                    <div><!-- spacer --></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Alteration -->
+              <div class="dyn-group" data-group="alteration">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔧 <strong>Structural Renovation / Alteration</strong> — Alt-1, Alt-2, and Alt-3 structural filings for NYC building renovations, change of use, and addition projects.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>DOB Alteration Type</label>
+                      <select name="Alteration-Type">
+                        <option value="">Select...</option>
+                        <option>Alt-1 (change of use / major work)</option>
+                        <option>Alt-2 (no change of use)</option>
+                        <option>Alt-3 (minor work)</option>
+                        <option>Not sure — need guidance</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Existing Drawings Available?</label>
+                      <select name="Existing-Drawings">
+                        <option value="">Select...</option>
+                        <option>Yes — full set available</option>
+                        <option>Partial drawings available</option>
+                        <option>No drawings</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Temporary Works -->
+              <div class="dyn-group" data-group="temporary-works">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">⚙️ <strong>Temporary Works</strong> — PE-sealed shoring, formwork, erection plans, and cofferdams for NYC projects under OSHA and NYC DOB requirements.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Work Type Required*</label>
+                      <select name="Temp-Works-Type" required>
+                        <option value="">Select...</option>
+                        <option>Shoring / Support of Excavation</option>
+                        <option>Formwork &amp; Falsework</option>
+                        <option>Steel Erection Plan</option>
+                        <option>Precast Erection Plan</option>
+                        <option>Cofferdam</option>
+                        <option>Bridge Demolition &amp; Removal</option>
+                        <option>Water Diversion Works</option>
+                        <option>Construction Monitoring</option>
+                        <option>Multiple / Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Excavation Depth (if applicable)</label>
+                      <input type="text" name="Excavation-Depth-ft" placeholder="e.g. 18 ft" />
+                    </div>
+                    <div>
+                      <label>Construction Start</label>
+                      <select name="Construction-Start">
+                        <option value="">Select...</option>
+                        <option>ASAP</option>
+                        <option>1–4 weeks</option>
+                        <option>1–3 months</option>
+                        <option>3–6 months</option>
+                        <option>Planning only</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Construction Admin / Special Inspections -->
+              <div class="dyn-group" data-group="ca-si">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏗️ <strong>Construction Administration / Special Inspections</strong> — TR1 filings, SIA coordination, shop drawing review, and NYC DOB sign-off services.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Project Phase*</label>
+                      <select name="Project-Phase" required>
+                        <option value="">Select...</option>
+                        <option>Pre-construction / design</option>
+                        <option>Actively under construction</option>
+                        <option>Nearing closeout / sign-off</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>TR1 / Special Inspection Filing Status</label>
+                      <select name="TR1-Status">
+                        <option value="">Select...</option>
+                        <option>Not yet started — need help</option>
+                        <option>In progress</option>
+                        <option>TR1 filed — need SIA services</option>
+                        <option>Not sure if required</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Inspection Types Needed</label>
+                      <select name="Inspection-Types">
+                        <option value="">Select...</option>
+                        <option>Concrete / reinforcing steel</option>
+                        <option>Structural steel / welding</option>
+                        <option>Soils / foundations</option>
+                        <option>Multiple types</option>
+                        <option>Not sure — need guidance</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Forensic / Expert Witness -->
+              <div class="dyn-group" data-group="forensic">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔬 <strong>Forensic Engineering / Expert Witness</strong> — Structural investigations, failure analysis, insurance claim support, and expert witness services under CPLR.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Type*</label>
+                      <select name="Forensic-Type" required>
+                        <option value="">Select...</option>
+                        <option>Property &amp; storm damage assessment</option>
+                        <option>Structural failure / collapse investigation</option>
+                        <option>Construction defect investigation</option>
+                        <option>Expert witness (litigation support)</option>
+                        <option>Insurance claim — subrogation</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Is This for Litigation?</label>
+                      <select name="Is-Litigation">
+                        <option value="">Select...</option>
+                        <option>Yes — active litigation</option>
+                        <option>Yes — anticipated</option>
+                        <option>No — insurance / internal</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Incident / Damage Date</label>
+                      <input type="date" name="Incident-Date" />
+                    </div>
+                    <div>
+                      <label>Urgency</label>
+                      <select name="Urgency">
+                        <option value="">Select...</option>
+                        <option>Routine (2–4 weeks)</option>
+                        <option>Urgent (within 1 week)</option>
+                        <option>Emergency (24–48 hours)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Underpinning / Foundation -->
+              <div class="dyn-group" data-group="underpinning">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏠 <strong>Underpinning / Foundation Engineering</strong> — PE-designed underpinning, support of excavation, and pre-construction surveys under NYC Admin Code §3309.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Adjacent Excavation Depth</label>
+                      <select name="Excavation-Depth-Range">
+                        <option value="">Select...</option>
+                        <option>Less than 5 ft</option>
+                        <option>5–10 ft</option>
+                        <option>10–20 ft</option>
+                        <option>Over 20 ft</option>
+                        <option>Not yet determined</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Pre-Construction Survey Needed?</label>
+                      <select name="Pre-Construction-Survey">
+                        <option value="">Select...</option>
+                        <option>Yes — not yet done</option>
+                        <option>Already completed</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- General Consultation -->
+              <div class="dyn-group" data-group="consultation">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">💬 <strong>General Consultation</strong> — Not sure what you need? Tell us about your project below and our engineers will point you in the right direction.</div>
+                </div>
+              </div>
+
+              <!-- Sidewalk Slab Renovation / Vault Engineering -->
+              <div class="dyn-group" data-group="sidewalk-slab">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🚧 <strong>Sidewalk Slab Renovation / Vault Engineering</strong> — PE-stamped structural design for sidewalk slab replacement and underground vault engineering, DOB + DOT permits for NYC properties.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Condition</label>
+                      <select name="Sidewalk-Condition">
+                        <option value="">Select...</option>
+                        <option>Failed / sunken slab requiring replacement</option>
+                        <option>Cracked / spalling — assessment needed</option>
+                        <option>DOT violation received</option>
+                        <option>Underground vault — new slab design</option>
+                        <option>Waterproofing upgrade</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Vault / Underground Space Below?</label>
+                      <select name="Vault-Present">
+                        <option value="">Select...</option>
+                        <option>Yes — occupied cellar / vault</option>
+                        <option>Yes — abandoned vault</option>
+                        <option>No underground space</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Approximate Sidewalk Area (sq ft)</label>
+                      <input type="text" name="Sidewalk-Area" placeholder="e.g. 200 sq ft" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Supervision & Consultancy -->
+              <div class="dyn-group" data-group="supervision">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">👷 <strong>Supervision &amp; Consultancy</strong> — On-site engineering supervision, peer review, third-party structural review, and general structural engineering consultation for NYC projects.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Type*</label>
+                      <select name="Supervision-Type" required>
+                        <option value="">Select...</option>
+                        <option>On-site construction supervision</option>
+                        <option>Third-party / peer review</option>
+                        <option>Structural assessment / condition report</option>
+                        <option>General engineering consultation</option>
+                        <option>Technical due diligence</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building / Project Type</label>
+                      <select name="Project-Type">
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Estimated Duration</label>
+                      <select name="Duration">
+                        <option value="">Select...</option>
+                        <option>Single visit / one-time</option>
+                        <option>Up to 1 month</option>
+                        <option>1–3 months</option>
+                        <option>3–12 months</option>
+                        <option>Ongoing</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Construction Management -->
+              <div class="dyn-group" data-group="construction-mgmt">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">📊 <strong>Construction Management Advisory</strong> — Cost estimation, quantity takeoffs, CPM scheduling, and project management advisory services for structural construction scopes in NYC.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="CM-Service" required>
+                        <option value="">Select...</option>
+                        <option>Cost Estimation / Quantity Takeoff</option>
+                        <option>CPM Project Scheduling</option>
+                        <option>Both — Cost &amp; Schedule</option>
+                        <option>Value Engineering Review</option>
+                        <option>Schedule Delay Analysis</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough</label>
+                      <select name="Borough">
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Estimated Construction Budget</label>
+                      <select name="Budget">
+                        <option value="">Select...</option>
+                        <option>Under $500k</option>
+                        <option>$500k – $2M</option>
+                        <option>$2M – $10M</option>
+                        <option>Over $10M</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Drawings / Documents Available?</label>
+                      <select name="Docs-Available">
+                        <option value="">Select...</option>
+                        <option>Yes — full construction documents</option>
+                        <option>Schematic / design development</option>
+                        <option>Preliminary / no drawings yet</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bridge & Infrastructure Engineering -->
+              <div class="dyn-group" data-group="bridge-works">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🌉 <strong>Bridge &amp; Infrastructure Engineering</strong> — PE-sealed structural engineering for bridge erection plans, demolition &amp; dismantling, water diversion / cofferdam design, and bridge inspection support across NYC and the tristate area.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="Bridge-Service" required>
+                        <option value="">Select...</option>
+                        <option>Bridge / Overpass Erection Plans</option>
+                        <option>Bridge Demolition &amp; Removal</option>
+                        <option>Cofferdam / Water Diversion Design</option>
+                        <option>Bridge Structural Assessment / Inspection</option>
+                        <option>Temporary Bridge / Access Structure</option>
+                        <option>Multiple / Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough / Location*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                        <option>Tristate / New Jersey</option>
+                        <option>Upstate New York</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Bridge / Structure Type</label>
+                      <select name="Bridge-Type">
+                        <option value="">Select...</option>
+                        <option>Pedestrian bridge</option>
+                        <option>Vehicular overpass</option>
+                        <option>Rail bridge</option>
+                        <option>Industrial / utility bridge</option>
+                        <option>Culvert / drainage structure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Approximate Span (ft)</label>
+                      <input type="text" name="Bridge-Span" placeholder="e.g. 60 ft" />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Governing Agency / Owner</label>
+                      <select name="Bridge-Owner">
+                        <option value="">Select...</option>
+                        <option>NYC DOT</option>
+                        <option>NYCDOT / NYSDOT</option>
+                        <option>MTA / Transit Authority</option>
+                        <option>Port Authority</option>
+                        <option>Private owner</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Construction Start</label>
+                      <select name="Construction-Start">
+                        <option value="">Select...</option>
+                        <option>ASAP</option>
+                        <option>1–4 weeks</option>
+                        <option>1–3 months</option>
+                        <option>3–6 months</option>
+                        <option>Planning only</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Roof Renovation / Replacement -->
+              <div class="dyn-group" data-group="roof-renovation">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏗️ <strong>Roof Renovation / Replacement</strong> — PE-stamped structural assessment, dunnage redesign, parapet/bulkhead repair, and full roof deck replacement plans for NYC residential, commercial, and mixed-use buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="Roof-Service" required>
+                        <option value="">Select...</option>
+                        <option>Full roof deck replacement / new deck</option>
+                        <option>Parapet wall repair / rebuild</option>
+                        <option>Bulkhead structural repair</option>
+                        <option>Rooftop dunnage / equipment support</option>
+                        <option>Waterproofing membrane — structural assessment</option>
+                        <option>Green roof / rooftop addition structural review</option>
+                        <option>Multiple / Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family / co-op / condo</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Existing Roof Material</label>
+                      <select name="Roof-Material">
+                        <option value="">Select...</option>
+                        <option>Built-up / tar &amp; gravel</option>
+                        <option>EPDM / TPO membrane</option>
+                        <option>Concrete slab</option>
+                        <option>Steel deck</option>
+                        <option>Wood framing</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>DOB Filing Required?</label>
+                      <select name="DOB-Filing">
+                        <option value="">Select...</option>
+                        <option>Yes — Alt-2 / Alt-3 filing</option>
+                        <option>Emergency repair</option>
+                        <option>PE letter / calculations only</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Number of Stories</label>
+                      <input type="text" name="Stories" placeholder="e.g. 6" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Specialty Engineering -->
+              <div class="dyn-group" data-group="specialty-engineering">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔩 <strong>Specialty Engineering</strong> — PE-stamped design for post-installed anchorage &amp; structural connections, slab/beam formwork, and structural specialty items for NYC projects.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="Specialty-Service" required>
+                        <option value="">Select...</option>
+                        <option>Roof Repair &amp; Safety (dunnage, parapet, bulkhead)</option>
+                        <option>Anchorage &amp; Connection Design</option>
+                        <option>Formwork Design (slab, beam, sidewalk shed)</option>
+                        <option>Multiple / combination</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>DOB Filing Needed?</label>
+                      <select name="DOB-Filing">
+                        <option value="">Select...</option>
+                        <option>Yes — Alt-2 / Alt-3</option>
+                        <option>PE letter / calculations only</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Building Openings -->
+              <div class="dyn-group" data-group="building-openings">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🪟 <strong>Building Openings / Structural Cuts</strong> — PE-stamped beam/lintel design, shoring plan, and DOB Alt-2 filing for new or enlarged windows, doors, and passage openings in NYC buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Opening Type</label>
+                      <select name="Opening-Type">
+                        <option value="">Select...</option>
+                        <option>New window (in existing wall)</option>
+                        <option>Enlarge existing window</option>
+                        <option>New door opening</option>
+                        <option>Passage / corridor opening</option>
+                        <option>Slab opening (floor / ceiling)</option>
+                        <option>Multiple / not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Wall / Structure Type</label>
+                      <select name="Wall-Type">
+                        <option value="">Select...</option>
+                        <option>Brick masonry</option>
+                        <option>Concrete block (CMU)</option>
+                        <option>Reinforced concrete</option>
+                        <option>Steel frame with masonry infill</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Facade Renovation -->
+              <div class="dyn-group" data-group="facade-renovation">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏛️ <strong>Façade Renovation &amp; Restoration</strong> — FISP remediation design, masonry repointing, terra cotta restoration, cladding replacement, and LPC compatible facade repairs for NYC buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential multi-family</option>
+                        <option>Commercial / office</option>
+                        <option>Mixed-use</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Facade Material</label>
+                      <select name="Facade-Material">
+                        <option value="">Select...</option>
+                        <option>Brick masonry</option>
+                        <option>Terra cotta</option>
+                        <option>Cast stone / precast concrete</option>
+                        <option>Metal panel / curtain wall</option>
+                        <option>Multiple / mixed</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>FISP Status</label>
+                      <select name="FISP-Status">
+                        <option value="">Select...</option>
+                        <option>FISP Unsafe — remediation required</option>
+                        <option>FISP SWARMP — repair required</option>
+                        <option>FISP Safe — proactive maintenance</option>
+                        <option>Not FISP-applicable (under 6 stories)</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label>Is the building LPC / Landmarks designated?</label>
+                  <select name="LPC-Designated">
+                    <option value="">Select...</option>
+                    <option>Yes — individual landmark</option>
+                    <option>Yes — historic district</option>
+                    <option>No</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Historic Restoration -->
+              <div class="dyn-group" data-group="historic-restoration">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏗️ <strong>Historic / Landmark Building Restoration</strong> — Structural investigation, rehabilitation design, LPC CofA / PMW support, and DOB Chapter 34 compliance for NYC pre-war and landmark buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential pre-war</option>
+                        <option>Commercial / loft</option>
+                        <option>Institutional (school, church)</option>
+                        <option>Industrial heritage</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>NYC Borough*</label>
+                      <select name="Borough" required>
+                        <option value="">Select...</option>
+                        <option>Manhattan</option>
+                        <option>Brooklyn</option>
+                        <option>Queens</option>
+                        <option>The Bronx</option>
+                        <option>Staten Island</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>LPC Designation</label>
+                      <select name="LPC-Designation">
+                        <option value="">Select...</option>
+                        <option>Individual NYC Landmark</option>
+                        <option>Interior Landmark</option>
+                        <option>Historic District</option>
+                        <option>Not LPC-designated</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Scope of Work</label>
+                      <select name="Scope">
+                        <option value="">Select...</option>
+                        <option>Structural investigation / assessment only</option>
+                        <option>Structural rehabilitation design</option>
+                        <option>Adaptive reuse / change of occupancy</option>
+                        <option>Vertical addition</option>
+                        <option>Full building restoration</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ③ Always-on contact fields -->
+              <div class="form-divider"><span>Your Contact Information</span></div>
+
+              <label for="fullName">Full Name*</label>
+              <input id="fullName" name="Full-Name" type="text" placeholder="Your full name" required />
+
+              <div class="split-inputs">
+                <div>
+                  <label for="email">Email Address*</label>
+                  <input id="email" name="Email" type="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+
+              <label for="message">Additional Details / Message*</label>
+              <textarea id="message" name="Message" rows="5" placeholder="Any additional details about your project, timeline, or specific questions..." required></textarea>
+
+              <button type="submit" class="btn-solid" id="submitBtn">Send Message →</button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="form-success-icon">✓</div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. We'll get back to you at <strong>info@asvakas.com</strong> within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section section">
+        <div class="container">
+          <span class="pill fade-up">Our Location</span>
+          <h2 class="fade-up" style="--delay:0.1s">Find Us on the Map</h2>
+          <div class="map-frame fade-up" style="--delay:0.22s">
+            <iframe
+              title="Asvakas location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=15%20West%2038th%20Street,%204th%20Floor,%20New%20York,%20NY%2010018&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section section">
+        <div class="container">
+          <span class="pill fade-up">FAQs</span>
+          <h2 class="fade-up" style="--delay:0.1s">Need Help Before You Build?</h2>
+          <p class="faq-sub fade-up" style="--delay:0.2s">Find quick answers to the most common inquiries from new and returning clients</p>
+
+          <div class="faq-list">
+            <div class="faq-entry fade-up" style="--delay:0.05s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">01</span>
+                <span class="q">What areas do you serve?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p>We primarily serve New York City and the surrounding metro area, including all five boroughs. Our team handles residential, commercial, and mixed-use projects requiring structural engineering, local law compliance, and temporary works support anywhere in the city.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.12s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">02</span>
+                <span class="q">How early should I contact you for a new project?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p>The earlier the better. For new builds or major renovations, we recommend contacting us during the design phase so we can address structural requirements, DOB filing timelines, and Local Law compliance before construction begins. For inspections, we can typically mobilize quickly once the scope is defined.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.19s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">03</span>
+                <span class="q">Do you offer free consultations?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. We offer a complimentary initial consultation to review your project scope, whether it's a Local Law 11 facade inspection, structural renovation, temporary works requirement, or new structural design. We'll walk you through what's needed and outline the most efficient path forward.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.26s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">04</span>
+                <span class="q">Can you help with permits and documentation?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes. We prepare all required engineering drawings, calculations, and technical reports for NYC DOB permit submissions — including Local Law 11 facade filings, Local Law 126 parking garage reports, and structural renovation permits. We coordinate directly with your architect, contractor, and the DOB to keep approvals on track.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mini-cta">
+        <div class="mini-left slide-left">
+          <h2>Find the Right Service for Your Build</h2>
+          <p>Explore our engineering services for residential, commercial, expansion, and renovation projects.</p>
+          <a href="index.html#services" class="mini-btn">View All Projects →</a>
+        </div>
+        <div class="mini-right slide-right">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1600&q=80" alt="Architecture" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-body">
+        <div class="container footer-top">
+          <div class="footer-brand-col">
+            <a href="index.html#top" class="footer-brand">
+              <span class="footer-brand-icon"></span>
+              Asvakas Inc
+            </a>
+            <h4 class="footer-sub-heading">Subscribe for Updates</h4>
+            <p class="footer-sub-text">Get engineering insights, NYC compliance updates, and industry news delivered to your inbox.</p>
+            <form class="footer-subscribe" onsubmit="return false;">
+              <input type="email" placeholder="Enter your email address" aria-label="Email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#process">Process</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Social Media</h5>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter/X</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog/index.html">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span>© 2026 Asvakas Inc. All Rights Reserved.</span>
+          <a href="privacy-policy.html">Privacy Policy &amp; Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <script>
+      const animObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            animObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up, .slide-left, .slide-right').forEach(el => animObserver.observe(el));
+    </script>
+    <script src="region.js"></script>
+  </body>
+</html>

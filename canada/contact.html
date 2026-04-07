@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Asvakas Engineering Canada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../contact.css" />
+    <link rel="stylesheet" href="canada.css" />
+  </head>
+  <body class="contact-page">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Asvakas<span class="brand-eng" data-i18n="brand.eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="contact.html" class="active" data-i18n="nav.contact">Contact Us</a>
+        </nav>
+        <div class="lang-toggle">
+          <button class="lang-opt active" data-lang="en">EN</button>
+          <button class="lang-opt" data-lang="fr">FR</button>
+        </div>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="rp-flag">🇨🇦</span>
+            <span class="rp-label">Canada</span>
+            <span class="rp-arrow">▾</span>
+          </button>
+          <ul class="rp-dropdown" role="listbox">
+            <li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li>
+            <li class="rp-option active" data-region="canada" role="option">🇨🇦 Canada</li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- Intro -->
+      <section class="intro section">
+        <div class="container intro-wrap">
+          <span class="pill fade-up" data-i18n="contact.intro.pill">Our Contact</span>
+          <h1 class="fade-up" style="--delay:0.12s" data-i18n="contact.intro.h1">Let's Build Something Together</h1>
+          <p class="fade-up" style="--delay:0.24s" data-i18n="contact.intro.sub">Our Toronto team is ready to discuss your project. Structural design, OBC compliance inspections, temporary works — reach out and we'll respond within one business day.</p>
+        </div>
+      </section>
+
+      <!-- Contact Panel -->
+      <section class="contact-panel section" id="contact-form">
+        <div class="container panel-grid">
+
+          <div class="panel-left slide-left">
+            <span class="pill pill-light" data-i18n="contact.map.h2">Our Toronto Office</span>
+            <h2 data-i18n="contact.panel.h2">Let's Work Together</h2>
+            <p data-i18n="contact.panel.p">Whether you have a question, need details about our services, or want to discuss a project — we're here to help.</p>
+
+            <div class="contact-lines two-col">
+              <div>
+                <h3 data-i18n="contact.detail.email.h">Message Us</h3>
+                <p><a href="mailto:info@asvakas.com" style="color:inherit">info@asvakas.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-lines one-col">
+              <div>
+                <h3 data-i18n="contact.detail.addr.h">Location</h3>
+                <p>100 King Street West, Suite 5700<br>Toronto, ON M5X 1C7</p>
+              </div>
+            </div>
+
+            <div class="contact-lines one-col">
+              <div>
+                <h3 data-i18n="contact.detail.hours.h">Business Hours</h3>
+                <p data-i18n="contact.detail.hours.p">Monday – Friday: 8:00 AM – 6:00 PM EST</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-right slide-right">
+            <h2 data-i18n="contact.form.h2">Send Us a Message</h2>
+            <form
+              class="contact-form-grid"
+              id="contactForm"
+              novalidate
+            >
+
+              <!-- ① Service selector -->
+              <label id="svcLabel" for="svcTrigger" data-i18n="contact.form.svc">Service Required*</label>
+              <div class="svc-dropdown" id="svcDropdown" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="svcLabel">
+                <button type="button" class="svc-trigger" id="svcTrigger" aria-controls="svcPanel">
+                  <span class="svc-trigger-text svc-placeholder">— Select the service you need —</span>
+                  <svg class="svc-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <ul class="svc-panel" id="svcPanel" role="listbox" aria-labelledby="svcLabel">
+                  <li class="svc-group">
+                    <div class="svc-group-label">Inspections &amp; Assessments</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="facade-inspection">Façade / Balcony Inspection (O.Reg 59/20)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="bca">Building Condition Assessment (ASTM E2018)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="sidewalk-on">Sidewalk &amp; Exterior Concrete Works</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Design &amp; Construction</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="structural-design">Structural Design / New Construction</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="structural-renovation">Structural Renovation / OBC Alteration</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="supervision-on">Supervision &amp; Consultancy (P.Eng.)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="underpinning">Underpinning / Basement Lowering</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="temporary-works">Temporary Works (OHSA — Shoring, Formwork, Erection)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="general-review">PEO General Review / Construction Administration</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="construction-mgmt-on">Construction Management (Cost Estimation &amp; Scheduling)</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Renovation &amp; Restoration</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="building-openings-on">Building Openings / Structural Cuts (Windows, Doors, Passages)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="facade-renovation-on">Façade Renovation &amp; Restoration (OBC / O.Reg 59/20)</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="heritage-restoration-on">Heritage Building Structural Restoration (Ontario Heritage Act)</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Specialty Engineering</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="bridge-on">Bridge &amp; Infrastructure Engineering</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="roof-renovation-on">Roof Renovation / Replacement</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="specialty-engineering-on">Specialty Engineering (Anchorage, Formwork)</button>
+                  </li>
+                  <li class="svc-group">
+                    <div class="svc-group-label">Forensic &amp; Legal</div>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="forensic">Forensic Engineering / Expert Witness</button>
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="construction-act">Ontario Construction Act / Payment Dispute</button>
+                  </li>
+                  <li class="svc-standalone">
+                    <button type="button" class="svc-opt" role="option" aria-selected="false" data-value="consultation">General Consultation / Other</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- Hidden native select keeps form value for mailto submission -->
+              <select id="serviceType" name="Service-Type" class="svc-hidden-select" required tabindex="-1" aria-hidden="true">
+                <option value=""></option>
+                <option value="facade-inspection">Façade / Balcony Inspection (O.Reg 59/20)</option>
+                <option value="bca">Building Condition Assessment (ASTM E2018)</option>
+                <option value="sidewalk-on">Sidewalk &amp; Exterior Concrete Works</option>
+                <option value="structural-design">Structural Design / New Construction</option>
+                <option value="structural-renovation">Structural Renovation / OBC Alteration</option>
+                <option value="supervision-on">Supervision &amp; Consultancy (P.Eng.)</option>
+                <option value="underpinning">Underpinning / Basement Lowering</option>
+                <option value="temporary-works">Temporary Works (OHSA — Shoring, Formwork, Erection)</option>
+                <option value="general-review">PEO General Review / Construction Administration</option>
+                <option value="construction-mgmt-on">Construction Management (Cost Estimation &amp; Scheduling)</option>
+                <option value="specialty-engineering-on">Specialty Engineering (Anchorage, Formwork)</option>
+                <option value="bridge-on">Bridge &amp; Infrastructure Engineering</option>
+                <option value="roof-renovation-on">Roof Renovation / Replacement</option>
+                <option value="forensic">Forensic Engineering / Expert Witness</option>
+                <option value="construction-act">Ontario Construction Act / Payment Dispute</option>
+                <option value="building-openings-on">Building Openings / Structural Cuts</option>
+                <option value="facade-renovation-on">Façade Renovation &amp; Restoration</option>
+                <option value="heritage-restoration-on">Heritage Building Structural Restoration</option>
+                <option value="consultation">General Consultation / Other</option>
+              </select>
+
+              <!-- ② Dynamic field groups -->
+
+              <!-- Façade / Balcony Inspection -->
+              <div class="dyn-group" data-group="facade-inspection">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏢 <strong>Façade / Balcony Inspection (O.Reg 59/20)</strong> — Mandatory 5-year balcony guard and exterior cladding inspections for Ontario multi-unit residential buildings.</div>
+                  <label>Building Address*</label>
+                  <input type="text" name="Building-Address" placeholder="e.g. 100 King St W, Toronto ON M5X 1C7" required />
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Condominium</option>
+                        <option>Apartment / Rental</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Number of Storeys*</label>
+                      <input type="number" name="Number-of-Storeys" min="1" placeholder="e.g. 22" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Last Inspection Date</label>
+                      <select name="Last-Inspection">
+                        <option value="">Select...</option>
+                        <option>Never inspected</option>
+                        <option>Within the last 5 years</option>
+                        <option>Over 5 years ago</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Active Property Standards Order?</label>
+                      <select name="Property-Standards-Order">
+                        <option value="">Select...</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Building Condition Assessment -->
+              <div class="dyn-group" data-group="bca">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔍 <strong>Building Condition Assessment</strong> — ASTM E2018 / OBC-based structural and envelope assessments for acquisitions, insurance, and capital planning.</div>
+                  <label>Building Address*</label>
+                  <input type="text" name="Building-Address" placeholder="e.g. 200 Bay St, Toronto ON" required />
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Commercial office</option>
+                        <option>Residential / multi-family</option>
+                        <option>Industrial</option>
+                        <option>Institutional</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Purpose of Assessment</label>
+                      <select name="BCA-Purpose">
+                        <option value="">Select...</option>
+                        <option>Property acquisition / due diligence</option>
+                        <option>Insurance renewal</option>
+                        <option>Capital reserve planning</option>
+                        <option>Municipal / regulatory compliance</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Structural Design -->
+              <div class="dyn-group" data-group="structural-design">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">📐 <strong>Structural Design / New Construction</strong> — OBC-compliant structural design, permit drawings sealed by a licensed Ontario P.Eng., and PEO General Review coordination.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (detached / semi)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Mississauga, Ottawa" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Approximate Square Footage</label>
+                      <select name="Approx-Sq-Footage">
+                        <option value="">Select...</option>
+                        <option>Under 2,000 sq ft</option>
+                        <option>2,000 – 5,000 sq ft</option>
+                        <option>5,000 – 15,000 sq ft</option>
+                        <option>15,000 – 50,000 sq ft</option>
+                        <option>Over 50,000 sq ft</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>OBC Permit Status</label>
+                      <select name="OBC-Permit-Status">
+                        <option value="">Select...</option>
+                        <option>Not yet applied</option>
+                        <option>Application in progress</option>
+                        <option>Permit issued</option>
+                        <option>Need help with application</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Estimated Construction Start</label>
+                      <select name="Estimated-Start">
+                        <option value="">Select...</option>
+                        <option>ASAP</option>
+                        <option>1–3 months</option>
+                        <option>3–6 months</option>
+                        <option>6–12 months</option>
+                        <option>Planning phase only</option>
+                      </select>
+                    </div>
+                    <div><!-- spacer --></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Structural Renovation -->
+              <div class="dyn-group" data-group="structural-renovation">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔧 <strong>Structural Renovation / OBC Alteration</strong> — Structural engineering for renovations, additions, change of use, and OBC Part 11 (existing buildings) compliance.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (detached / semi)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Hamilton" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>OBC Permit Required?</label>
+                      <select name="OBC-Permit-Required">
+                        <option value="">Select...</option>
+                        <option>Yes — not yet applied</option>
+                        <option>Yes — application in progress</option>
+                        <option>Permit already issued</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Existing Drawings Available?</label>
+                      <select name="Existing-Drawings">
+                        <option value="">Select...</option>
+                        <option>Yes — full set available</option>
+                        <option>Partial drawings available</option>
+                        <option>No drawings</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Temporary Works Ontario -->
+              <div class="dyn-group" data-group="temporary-works">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">⚙️ <strong>Temporary Works — Ontario</strong> — P.Eng.-sealed formwork (OHSA s.83), shoring, steel/precast erection plans, and cofferdams for Ontario construction projects.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Work Type Required*</label>
+                      <select name="Temp-Works-Type" required>
+                        <option value="">Select...</option>
+                        <option>Shoring / Excavation Support</option>
+                        <option>Formwork &amp; Falsework (OHSA s.83)</option>
+                        <option>Steel Erection Plan</option>
+                        <option>Precast Erection Plan</option>
+                        <option>Cofferdam</option>
+                        <option>Bridge Demolition &amp; Removal</option>
+                        <option>Water Diversion Works</option>
+                        <option>Multiple / Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Brampton" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Excavation Depth (if applicable)</label>
+                      <input type="text" name="Excavation-Depth" placeholder="e.g. 4.5 m" />
+                    </div>
+                    <div>
+                      <label>OHSA Constructor Notice Filed?</label>
+                      <select name="OHSA-Notice-Filed">
+                        <option value="">Select...</option>
+                        <option>Yes</option>
+                        <option>No — not yet</option>
+                        <option>Not sure if required</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PEO General Review / CA -->
+              <div class="dyn-group" data-group="general-review">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">📋 <strong>PEO General Review / Construction Administration</strong> — OBC-required structural field review, shop drawing review, RFI support, and Schedule 2 Division C final certificate.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Project Phase*</label>
+                      <select name="Project-Phase" required>
+                        <option value="">Select...</option>
+                        <option>Pre-construction / design</option>
+                        <option>Actively under construction</option>
+                        <option>Nearing occupancy / closeout</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>OBC Building Permit Issued?</label>
+                      <select name="OBC-Permit-Issued">
+                        <option value="">Select...</option>
+                        <option>Yes</option>
+                        <option>Application in progress</option>
+                        <option>Not yet applied</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Mississauga" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Forensic / Expert Witness -->
+              <div class="dyn-group" data-group="forensic">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔬 <strong>Forensic Engineering / Expert Witness</strong> — Structural investigations, construction defect analysis, Tarion warranty support, and Rule 53.03 expert engineering evidence for Ontario courts.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Type*</label>
+                      <select name="Forensic-Type" required>
+                        <option value="">Select...</option>
+                        <option>Property &amp; storm damage assessment</option>
+                        <option>Structural failure / collapse investigation</option>
+                        <option>Construction defect investigation</option>
+                        <option>Expert witness (Rule 53.03)</option>
+                        <option>Insurance claim / subrogation</option>
+                        <option>Tarion warranty dispute</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Is This for Litigation?</label>
+                      <select name="Is-Litigation">
+                        <option value="">Select...</option>
+                        <option>Yes — active litigation</option>
+                        <option>Yes — anticipated</option>
+                        <option>No — insurance / internal</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Incident / Damage Date</label>
+                      <input type="date" name="Incident-Date" />
+                    </div>
+                    <div>
+                      <label>Urgency</label>
+                      <select name="Urgency">
+                        <option value="">Select...</option>
+                        <option>Routine (2–4 weeks)</option>
+                        <option>Urgent (within 1 week)</option>
+                        <option>Emergency (24–48 hours)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Underpinning -->
+              <div class="dyn-group" data-group="underpinning">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏠 <strong>Underpinning / Basement Lowering</strong> — P.Eng.-designed underpinning sequences and OBC permit drawings for Ontario basement lowering and foundation work.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Vaughan" required />
+                    </div>
+                    <div>
+                      <label>Current Basement Height</label>
+                      <select name="Current-Basement-Height">
+                        <option value="">Select...</option>
+                        <option>Crawlspace / no basement</option>
+                        <option>Under 6 ft</option>
+                        <option>6–7 ft</option>
+                        <option>7–8 ft</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Target Basement Height</label>
+                      <select name="Target-Basement-Height">
+                        <option value="">Select...</option>
+                        <option>7 ft</option>
+                        <option>8 ft</option>
+                        <option>9 ft</option>
+                        <option>Over 9 ft</option>
+                        <option>Not yet determined</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Neighbour Notification Done?</label>
+                      <select name="Neighbour-Notification">
+                        <option value="">Select...</option>
+                        <option>Yes</option>
+                        <option>No — need guidance</option>
+                        <option>Not sure if required</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Construction Act / Payment -->
+              <div class="dyn-group" data-group="construction-act">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">⚖️ <strong>Ontario Construction Act</strong> — Prompt payment timelines, construction lien registration support, and ODACC adjudication advisory for Ontario projects.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Your Role on the Project*</label>
+                      <select name="Project-Role" required>
+                        <option value="">Select...</option>
+                        <option>Owner</option>
+                        <option>General Contractor</option>
+                        <option>Subcontractor / Supplier</option>
+                        <option>Engineer / Consultant</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Issue Type*</label>
+                      <select name="Issue-Type" required>
+                        <option value="">Select...</option>
+                        <option>Unpaid invoice / prompt payment</option>
+                        <option>Construction lien — registration</option>
+                        <option>ODACC adjudication</option>
+                        <option>Holdback dispute</option>
+                        <option>Substantial performance question</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Approximate Contract Value</label>
+                      <select name="Contract-Value">
+                        <option value="">Select...</option>
+                        <option>Under $50,000</option>
+                        <option>$50,000 – $250,000</option>
+                        <option>$250,000 – $1,000,000</option>
+                        <option>Over $1,000,000</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>60-Day Lien Deadline Approaching?</label>
+                      <select name="Lien-Deadline">
+                        <option value="">Select...</option>
+                        <option>Yes — imminent</option>
+                        <option>Yes — within 30 days</option>
+                        <option>No urgent deadline</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- General Consultation -->
+              <div class="dyn-group" data-group="consultation">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">💬 <strong>General Consultation</strong> — Not sure what you need? Describe your project below and our Ontario P.Eng. team will guide you.</div>
+                </div>
+              </div>
+
+              <!-- Sidewalk & Exterior Concrete Works -->
+              <div class="dyn-group" data-group="sidewalk-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🚧 <strong>Sidewalk &amp; Exterior Concrete Works</strong> — P.Eng.-sealed structural design for sidewalk repairs, concrete slab replacement, retaining walls, and underground vault works compliant with municipal standards across Ontario.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City" placeholder="e.g. Toronto, Ottawa, Brampton" required />
+                    </div>
+                    <div>
+                      <label>Work Type</label>
+                      <select name="Sidewalk-Work">
+                        <option value="">Select...</option>
+                        <option>Sidewalk slab replacement</option>
+                        <option>Concrete apron / driveway</option>
+                        <option>Underground vault engineering</option>
+                        <option>Retaining wall design</option>
+                        <option>General concrete repair</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Approximate Area (sq ft)</label>
+                      <input type="text" name="Concrete-Area" placeholder="e.g. 300 sq ft" />
+                    </div>
+                    <div>
+                      <label>Municipality Permit Required?</label>
+                      <select name="Permit-Required">
+                        <option value="">Select...</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Supervision & Consultancy Ontario -->
+              <div class="dyn-group" data-group="supervision-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">👷 <strong>Supervision &amp; Consultancy</strong> — P.Eng. on-site construction supervision, General Review under OBC Div. C Part 1, third-party peer review, and structural engineering consultation across Ontario.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Type*</label>
+                      <select name="Supervision-Type" required>
+                        <option value="">Select...</option>
+                        <option>On-site P.Eng. supervision</option>
+                        <option>OBC General Review (Schedule 1)</option>
+                        <option>Third-party / peer review</option>
+                        <option>Structural assessment / condition report</option>
+                        <option>General engineering consultation</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City" placeholder="e.g. Toronto, Hamilton, Mississauga" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type</label>
+                      <select name="Building-Type">
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family / condo</option>
+                        <option>Commercial</option>
+                        <option>Industrial</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Estimated Duration</label>
+                      <select name="Duration">
+                        <option value="">Select...</option>
+                        <option>Single visit / one-time</option>
+                        <option>Up to 1 month</option>
+                        <option>1–3 months</option>
+                        <option>3–12 months</option>
+                        <option>Ongoing</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Construction Management Ontario -->
+              <div class="dyn-group" data-group="construction-mgmt-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">📊 <strong>Construction Management Advisory</strong> — Cost estimation, quantity takeoffs, CPM project scheduling, and value engineering services for structural construction projects across Ontario.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="CM-Service" required>
+                        <option value="">Select...</option>
+                        <option>Cost Estimation / Quantity Takeoff</option>
+                        <option>CPM Project Scheduling</option>
+                        <option>Both — Cost &amp; Schedule</option>
+                        <option>Value Engineering Review</option>
+                        <option>Schedule Delay Analysis</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Region</label>
+                      <input type="text" name="City" placeholder="e.g. Toronto, GTA, Ottawa" />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Estimated Construction Budget</label>
+                      <select name="Budget">
+                        <option value="">Select...</option>
+                        <option>Under $500k</option>
+                        <option>$500k – $2M</option>
+                        <option>$2M – $10M</option>
+                        <option>Over $10M</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Documents Available?</label>
+                      <select name="Docs-Available">
+                        <option value="">Select...</option>
+                        <option>Yes — full construction documents</option>
+                        <option>Schematic / design development</option>
+                        <option>Preliminary / no drawings yet</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bridge & Infrastructure Engineering (Ontario) -->
+              <div class="dyn-group" data-group="bridge-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🌉 <strong>Bridge &amp; Infrastructure Engineering</strong> — P.Eng.-sealed engineering for bridge erection plans (OHSA), bridge demolition, cofferdam &amp; water diversion design, and structural assessment for Ontario bridges and infrastructure.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="Bridge-Service" required>
+                        <option value="">Select...</option>
+                        <option>Bridge / Overpass Erection Plans</option>
+                        <option>Bridge Demolition &amp; Removal</option>
+                        <option>Cofferdam / Water Diversion Design</option>
+                        <option>Bridge Structural Assessment</option>
+                        <option>Temporary Bridge / Access Structure</option>
+                        <option>Multiple / Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City" placeholder="e.g. Toronto, Hamilton, Ottawa" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Bridge / Structure Type</label>
+                      <select name="Bridge-Type">
+                        <option value="">Select...</option>
+                        <option>Pedestrian bridge</option>
+                        <option>Vehicular overpass</option>
+                        <option>Rail bridge</option>
+                        <option>Industrial / utility bridge</option>
+                        <option>Culvert / drainage structure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Approximate Span (m)</label>
+                      <input type="text" name="Bridge-Span" placeholder="e.g. 20 m" />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Governing Authority</label>
+                      <select name="Bridge-Owner">
+                        <option value="">Select...</option>
+                        <option>City of Toronto / Municipal</option>
+                        <option>MTO (Ministry of Transportation Ontario)</option>
+                        <option>Metrolinx / GO Transit</option>
+                        <option>Private owner</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Construction Start</label>
+                      <select name="Construction-Start">
+                        <option value="">Select...</option>
+                        <option>ASAP</option>
+                        <option>1–4 weeks</option>
+                        <option>1–3 months</option>
+                        <option>3–6 months</option>
+                        <option>Planning only</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Roof Renovation / Replacement (Ontario) -->
+              <div class="dyn-group" data-group="roof-renovation-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏗️ <strong>Roof Renovation / Replacement</strong> — P.Eng.-sealed structural assessment, deck replacement, parapet repair, and rooftop addition design for Ontario residential, commercial, and ICI buildings under OBC.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="Roof-Service" required>
+                        <option value="">Select...</option>
+                        <option>Full roof deck replacement / new deck</option>
+                        <option>Parapet wall repair / rebuild</option>
+                        <option>Rooftop mechanical equipment support</option>
+                        <option>Waterproofing — structural assessment</option>
+                        <option>Green roof / rooftop addition structural review</option>
+                        <option>Multiple / Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City" placeholder="e.g. Toronto, Mississauga, Ottawa" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (1–4 family)</option>
+                        <option>Multi-family / condo</option>
+                        <option>Commercial / ICI</option>
+                        <option>Industrial</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Existing Roof Material</label>
+                      <select name="Roof-Material">
+                        <option value="">Select...</option>
+                        <option>Built-up / tar &amp; gravel</option>
+                        <option>EPDM / TPO membrane</option>
+                        <option>Concrete slab</option>
+                        <option>Steel deck</option>
+                        <option>Wood framing</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>OBC Permit Required?</label>
+                      <select name="OBC-Permit">
+                        <option value="">Select...</option>
+                        <option>Yes — OBC building permit</option>
+                        <option>P.Eng. letter / calculations only</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Number of Storeys</label>
+                      <input type="text" name="Storeys" placeholder="e.g. 6" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Specialty Engineering Ontario -->
+              <div class="dyn-group" data-group="specialty-engineering-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🔩 <strong>Specialty Engineering</strong> — P.Eng.-sealed design for post-installed anchorage &amp; structural connections, slab/beam formwork, and structural specialty items for Ontario projects.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Service Required*</label>
+                      <select name="Specialty-Service" required>
+                        <option value="">Select...</option>
+                        <option>Roof Repair &amp; Safety (dunnage, parapet, bulkhead)</option>
+                        <option>Anchorage &amp; Connection Design (CSA A23.3 / S16)</option>
+                        <option>Formwork Design (OHSA s.83 — slab, beam, overhead protection)</option>
+                        <option>Multiple / combination</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Hamilton" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                        <option>Industrial</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>OBC Permit / Sealed Drawings Needed?</label>
+                      <select name="OBC-Permit">
+                        <option value="">Select...</option>
+                        <option>Yes — building permit drawings required</option>
+                        <option>P.Eng. letter / calculations only</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Building Openings Ontario -->
+              <div class="dyn-group" data-group="building-openings-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🪟 <strong>Building Openings / Structural Cuts</strong> — P.Eng. structural design and OBC building permit drawings for new or enlarged windows, doors, and passage openings through load-bearing walls in Ontario buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential (detached / semi)</option>
+                        <option>Multi-family residential</option>
+                        <option>Commercial</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Mississauga" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Opening Type</label>
+                      <select name="Opening-Type">
+                        <option value="">Select...</option>
+                        <option>New window (in existing wall)</option>
+                        <option>Enlarge existing window</option>
+                        <option>New door opening</option>
+                        <option>Passage / corridor opening</option>
+                        <option>Slab opening (floor / ceiling)</option>
+                        <option>Multiple / not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Wall / Structure Type</label>
+                      <select name="Wall-Type">
+                        <option value="">Select...</option>
+                        <option>Brick masonry</option>
+                        <option>Concrete block (CMU)</option>
+                        <option>Reinforced concrete</option>
+                        <option>Wood frame</option>
+                        <option>Unknown</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Facade Renovation Ontario -->
+              <div class="dyn-group" data-group="facade-renovation-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏛️ <strong>Façade Renovation &amp; Restoration</strong> — Masonry repointing, cladding replacement, facade waterproofing, and O.Reg 59/20 / OBC Part 11 compliance engineering for Ontario buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Condominium / Multi-family</option>
+                        <option>Commercial / Office</option>
+                        <option>Mixed-use</option>
+                        <option>Institutional</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Hamilton" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Facade Material</label>
+                      <select name="Facade-Material">
+                        <option value="">Select...</option>
+                        <option>Brick masonry</option>
+                        <option>Concrete (precast / cast-in-place)</option>
+                        <option>Metal panel / curtain wall</option>
+                        <option>EIFS / stucco</option>
+                        <option>Multiple / mixed</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>O.Reg 59/20 Inspection Completed?</label>
+                      <select name="OReg59-Status">
+                        <option value="">Select...</option>
+                        <option>Yes — unsafe conditions found</option>
+                        <option>Yes — repairs required</option>
+                        <option>Yes — all safe</option>
+                        <option>No — inspection due</option>
+                        <option>Not applicable</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label>Is the building Ontario Heritage Act designated?</label>
+                  <select name="Heritage-Designated">
+                    <option value="">Select...</option>
+                    <option>Yes — Part IV individual designation</option>
+                    <option>Yes — Part V heritage conservation district</option>
+                    <option>No</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Heritage Restoration Ontario -->
+              <div class="dyn-group" data-group="heritage-restoration-on">
+                <div class="dyn-group-inner">
+                  <div class="dyn-hint">🏗️ <strong>Heritage Building Structural Restoration</strong> — P.Eng. structural investigation, rehabilitation design, OBC Part 11 alternative solutions, and Ontario Heritage Act permit support for heritage-designated Ontario buildings.</div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>Building Type*</label>
+                      <select name="Building-Type" required>
+                        <option value="">Select...</option>
+                        <option>Residential heritage</option>
+                        <option>Commercial / industrial heritage</option>
+                        <option>Institutional (school, church)</option>
+                        <option>Mixed-use</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>City / Municipality*</label>
+                      <input type="text" name="City-Municipality" placeholder="e.g. Toronto, Kingston, Hamilton" required />
+                    </div>
+                  </div>
+                  <div class="split-inputs">
+                    <div>
+                      <label>OHA Designation Status</label>
+                      <select name="OHA-Status">
+                        <option value="">Select...</option>
+                        <option>Part IV — individual designation</option>
+                        <option>Part V — Heritage Conservation District</option>
+                        <option>Not designated</option>
+                        <option>Not sure</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label>Scope of Work</label>
+                      <select name="Scope">
+                        <option value="">Select...</option>
+                        <option>Structural investigation / assessment</option>
+                        <option>Rehabilitation design &amp; permit drawings</option>
+                        <option>Adaptive reuse / change of occupancy</option>
+                        <option>OBC Part 11 alternative solution</option>
+                        <option>Full building restoration</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-divider"><span>Your Contact Information</span></div>
+
+              <div class="split-inputs">
+                <div>
+                  <label for="firstName" data-i18n="contact.form.fname">First Name*</label>
+                  <input type="text" id="firstName" name="First-Name" placeholder="Jane" required />
+                </div>
+                <div>
+                  <label for="lastName" data-i18n="contact.form.lname">Last Name*</label>
+                  <input type="text" id="lastName" name="Last-Name" placeholder="Smith" required />
+                </div>
+              </div>
+
+              <div class="split-inputs">
+                <div>
+                  <label for="email" data-i18n="contact.form.email">Email Address*</label>
+                  <input type="email" id="email" name="Email" placeholder="jane@company.com" required />
+                </div>
+              </div>
+
+              <label for="message" data-i18n="contact.form.msg">Additional Details / Message*</label>
+              <textarea id="message" name="Message" rows="5" placeholder="Any additional details about your project, timeline, or specific questions..." required></textarea>
+
+              <button type="submit" class="btn-solid" id="submitBtn" data-i18n="contact.form.send">Send Message →</button>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="form-success-icon">✓</div>
+              <h3 data-i18n="contact.form.success.h">Message Sent!</h3>
+              <p data-i18n="contact.form.success.p">Thank you for reaching out. We'll get back to you at <strong>info@asvakas.com</strong> within one business day.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Map -->
+      <section class="map-section section">
+        <div class="container">
+          <span class="pill fade-up" data-i18n="contact.map.pill">Our Location</span>
+          <h2 class="fade-up" style="--delay:0.1s" data-i18n="contact.map.h2b">Find Us on the Map</h2>
+          <div class="map-frame fade-up" style="--delay:0.22s">
+            <iframe
+              title="Asvakas Toronto Office"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.171497895576!2d-79.38347868450222!3d43.64795417912156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d6b1fc3e0b%3A0x3b3c3b3c3b3c3b3c!2s100%20King%20St%20W%2C%20Toronto%2C%20ON%20M5X%201C7%2C%20Canada!5e0!3m2!1sen!2s!4v1718000000000!5m2!1sen!2s"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section section">
+        <div class="container">
+          <span class="pill fade-up" data-i18n="contact.faq.pill">FAQs</span>
+          <h2 class="fade-up" style="--delay:0.1s" data-i18n="contact.faq.h2">Need Help Before You Build?</h2>
+          <p class="faq-sub fade-up" style="--delay:0.2s" data-i18n="contact.faq.sub">Find quick answers to the most common inquiries from new and returning clients</p>
+
+          <div class="faq-list">
+
+            <div class="faq-entry fade-up" style="--delay:0.05s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">01</span>
+                <span class="q" data-i18n="contact.faq.q1">What geographic areas does Asvakas serve in Canada?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="contact.faq.a1">We are based in Toronto and primarily serve Ontario. We also take on projects in other provinces — contact us to discuss your specific location and project scope.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.12s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">02</span>
+                <span class="q" data-i18n="contact.faq.q2">Are you licensed as Professional Engineers in Ontario?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="contact.faq.a2">Yes. Our structural engineers hold P.Eng. licenses through Professional Engineers Ontario (PEO) and carry appropriate professional liability insurance for all project types.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.19s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">03</span>
+                <span class="q" data-i18n="contact.faq.q3">What is an OBC Part 11 exterior building inspection?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="contact.faq.a3">OBC Part 11 governs the renovation and upgrading of existing buildings in Ontario. A Part 11 exterior building inspection involves a condition assessment of your building envelope, identification of unsafe conditions, a repair scope, and all necessary building permit documentation.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.26s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">04</span>
+                <span class="q" data-i18n="contact.faq.q4">How long does a structural design project take?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="contact.faq.a4">Timelines vary by scope. Residential structural packages typically take 2–4 weeks. Larger commercial or mixed-use projects may take 6–12 weeks. We are transparent about timelines from the initial consultation.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.33s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">05</span>
+                <span class="q" data-i18n="contact.faq.q5">Do you handle the building permit submission on our behalf?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="contact.faq.a5">Yes. We prepare all required drawings, calculations, and supporting documentation for the municipal building permit application and can manage the submission and city comment responses on your behalf.</p>
+              </div>
+            </div>
+
+            <div class="faq-entry fade-up" style="--delay:0.40s">
+              <button class="faq-item" type="button" aria-expanded="false">
+                <span class="num">06</span>
+                <span class="q" data-i18n="contact.faq.q6">Can you work with our existing architect or contractor?</span>
+                <span class="icon">⌃</span>
+              </button>
+              <div class="faq-answer">
+                <p data-i18n="contact.faq.a6">Absolutely. We regularly collaborate with architects, general contractors, construction managers, and property managers as part of a project team, coordinating directly for seamless delivery.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Mini CTA -->
+      <section class="mini-cta">
+        <div class="mini-left slide-left">
+          <h2 data-i18n="contact.cta.h2">Find the Right Service for Your Build</h2>
+          <p data-i18n="contact.cta.p">Explore our engineering services for residential, commercial, and renovation projects across Canada.</p>
+          <a href="services.html" class="mini-btn" data-i18n="contact.cta.btn">View All Services →</a>
+        </div>
+        <div class="mini-right slide-right">
+          <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1600&q=80" alt="Architecture" />
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-body">
+        <div class="container footer-top">
+          <div class="footer-brand-col">
+            <a href="index.html#top" class="footer-brand"><span class="footer-brand-icon"></span>Asvakas Inc</a>
+            <h4 class="footer-sub-heading" data-i18n="footer.sub.h">Subscribe for Updates</h4>
+            <p class="footer-sub-text" data-i18n="footer.sub">Get engineering insights, Canadian compliance updates, and industry news delivered to your inbox.</p>
+            <form class="footer-subscribe" onsubmit="return false;"><input type="email" placeholder="Enter your email address" aria-label="Email" /><button type="submit" data-i18n="footer.sub.btn">Subscribe</button></form>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col">
+              <h5 data-i18n="footer.col1.h">Company</h5>
+              <ul>
+                <li><a href="index.html" data-i18n="footer.link.home">Home</a></li>
+                <li><a href="about.html" data-i18n="footer.link.about">About</a></li>
+                <li><a href="services.html" data-i18n="footer.link.services">Services</a></li>
+                <li><a href="projects.html" data-i18n="footer.link.projects">Projects</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 data-i18n="footer.col2.h">Social Media</h5>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter/X</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5 data-i18n="footer.col3.h">Support</h5>
+              <ul>
+                <li><a href="blog/index.html" data-i18n="footer.link.blog">Blog</a></li>
+                <li><a href="faq.html" data-i18n="footer.link.faq">FAQ</a></li>
+                <li><a href="blog/index.html" data-i18n="footer.link.help">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span data-i18n="footer.copy">© 2026 Asvakas Inc. All Rights Reserved.</span>
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy &amp; Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../contact.js"></script>
+    <script>
+      const animObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            animObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up, .slide-left, .slide-right').forEach(el => animObserver.observe(el));
+    </script>
+    <script src="../region.js"></script>
+    <script src="lang.js"></script>
+  </body>
+</html>

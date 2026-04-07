@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction Project Scheduling: CPM, Critical Path & Best Practices | Asvakas ENG</title>
+    <meta name="description" content="The Critical Path Method (CPM) is the gold standard for construction scheduling. Learn how structural engineers use CPM scheduling, calculate float, analyze delays, and keep projects on time." />
+    <meta name="keywords" content="CPM scheduling construction, critical path method construction, construction delay analysis, total float free float, project scheduling structural engineering" />
+    <link rel="canonical" href="https://asvakas.com/blog/project-scheduling-guide.html" />
+    <meta property="og:type" content="article" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Construction Project Scheduling: CPM, Critical Path & Best Practices","author":{"@type":"Organization","name":"Asvakas Engineering"},"publisher":{"@type":"Organization","name":"Asvakas Engineering"},"datePublished":"2026-04-01","dateModified":"2026-04-04"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the critical path in a construction schedule?","acceptedAnswer":{"@type":"Answer","text":"The critical path is the longest sequence of dependent activities from start to finish of the project. It represents the minimum possible project duration — any delay to a critical path activity directly delays the project completion date by the same amount. Critical path activities have zero total float. Identifying the critical path allows project teams to focus resources, management attention, and acceleration efforts where they will have the greatest schedule impact."}},{"@type":"Question","name":"What is the difference between total float and free float?","acceptedAnswer":{"@type":"Answer","text":"Total float is the amount of time an activity can be delayed without delaying the project completion date. It is shared among all activities on the same logic chain. Free float is the amount of time an activity can be delayed without delaying the early start of any immediately succeeding activity. An activity with free float can be delayed without affecting anyone downstream. In contract scheduling, float typically belongs to the project (not exclusively to either party) unless the contract specifies otherwise."}},{"@type":"Question","name":"What is a construction delay analysis?","acceptedAnswer":{"@type":"Answer","text":"A delay analysis is a forensic evaluation of a construction project schedule to determine: (1) whether a delay occurred; (2) how long the delay was; (3) which party caused the delay (owner, contractor, or both); and (4) the entitlement impact (time and/or money). Common delay analysis methods include As-Planned vs. As-Built, Windows Analysis (Time Impact Analysis), and Collapsed As-Built (but-for) analysis. Detailed contemporaneous schedule records are essential for a credible delay analysis."}},{"@type":"Question","name":"What construction scheduling software should I use?","acceptedAnswer":{"@type":"Answer","text":"Primavera P6 (Oracle) is the industry standard for complex construction projects and is typically required by owners and general contractors on large public and private projects. Microsoft Project is suitable for mid-size projects and is far more accessible for teams without P6 expertise. Both produce CPM schedule outputs. For scheduling-based delay analysis and claims, P6 is preferred because of its robust data export, resource loading capabilities, and acceptance in expert witness proceedings."}},{"@type":"Question","name":"How detailed should a construction schedule be?","acceptedAnswer":{"@type":"Answer","text":"Schedule detail should match the project's complexity, contract requirements, and management needs. A rule of thumb: structural activities should generally be broken down to work packages of 2–4 weeks in duration with clear, measurable completion criteria. More detail than this creates maintenance burden without management value. Contracts often specify a minimum number of activities or maximum activity duration — typically 20-day maximum on major commercial projects."}}]}]}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../blog.css" />
+  </head>
+  <body class="blog-article-page">
+    <header class="site-header scrolled" id="top">
+      <div class="container header-inner">
+        <a href="../index.html#top" class="brand">Asvakas<span class="brand-eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="../index.html">Home</a><a href="../about.html">About</a><a href="../services.html">Services</a>
+          <a href="../projects.html">Projects</a><a href="index.html" class="active">Blog</a><a href="../contact.html">Contact Us</a>
+        </nav>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false"><span class="rp-flag">🇺🇸</span><span class="rp-label">USA</span><span class="rp-arrow">▾</span></button>
+          <ul class="rp-dropdown" role="listbox"><li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li><li class="rp-option" data-region="canada" role="option">🇨🇦 Canada</li></ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><a href="index.html">Blog</a><span class="breadcrumb-sep">›</span><span>Project Scheduling Guide</span></div>
+          <span class="page-hero-pill">Construction Services</span>
+          <h1>Construction Project Scheduling: CPM, Critical Path & Best Practices</h1>
+          <p>A well-built schedule keeps projects on time and on budget, reduces disputes, and provides the baseline for delay analysis. Here's how CPM scheduling works in practice.</p>
+        </div>
+      </section>
+      <div class="container article-layout">
+        <article class="article-body">
+          <div class="article-meta-row">
+            <span class="blog-cat-pill">Construction Services</span><span class="article-meta-sep">|</span>
+            <span>8 min read</span><span class="article-meta-sep">|</span><span>April 2026 · By Asvakas Engineering</span>
+          </div>
+          <div class="toc-box">
+            <h4>In This Article</h4>
+            <ol>
+              <li><a href="#why-scheduling">Why Scheduling Matters</a></li>
+              <li><a href="#wbs">Work Breakdown Structure</a></li>
+              <li><a href="#cpm-basics">CPM Schedule Basics</a></li>
+              <li><a href="#critical-path">Critical Path & Float</a></li>
+              <li><a href="#float-types">Total Float vs. Free Float</a></li>
+              <li><a href="#compression">Schedule Compression: Crashing & Fast-Tracking</a></li>
+              <li><a href="#delay">Delay Analysis Methods</a></li>
+              <li><a href="#software">Scheduling Software</a></li>
+              <li><a href="#faq">Frequently Asked Questions</a></li>
+            </ol>
+          </div>
+
+          <h2 id="why-scheduling">Why Scheduling Matters</h2>
+          <p>In construction, time is money — literally. General condition costs (superintendents, trailers, cranes, site security) accrue daily regardless of production progress. Delayed occupancy means delayed revenue for the owner. Delayed milestones trigger contractual penalties. And when delays occur and blame is disputed, a rigorous schedule becomes the primary evidence in a delay claim — worth far more than after-the-fact recollection.</p>
+          <p>For structural scope specifically — which typically drives the longest lead activities — schedule control is critical. Structural steel lead time from order to delivery is often 16–24 weeks. Drilled shafts cannot begin until the geotechnical report is approved. Concrete pour sequences must be coordinated with crane availability. Getting these activities wrong pushes everything downstream.</p>
+
+          <h2 id="wbs">Work Breakdown Structure</h2>
+          <p>Every schedule begins with a work breakdown structure (WBS) — a hierarchical decomposition of all project work into manageable packages. For a structural renovation, a typical WBS might be:</p>
+          <ul>
+            <li>Level 1: Project</li>
+            <li>Level 2: Phase (Design, Permitting, Construction, Closeout)</li>
+            <li>Level 3: Construction Scope (Demolition, Foundation, Structural Frame, Facade, MEP, Finishes)</li>
+            <li>Level 4: Work Package (Foundation Excavation, Foundation Forming, Foundation Concrete, etc.)</li>
+          </ul>
+          <p>Each work package becomes an activity in the schedule. Activities must have clear, measurable start and finish criteria — "concrete placement complete" is measurable; "work ongoing" is not.</p>
+
+          <h2 id="cpm-basics">CPM Schedule Basics</h2>
+          <p>The Critical Path Method (CPM) was developed in the 1950s jointly by DuPont and RAND Corporation for industrial project scheduling. CPM represents project work as a network of activities linked by logical relationships:</p>
+          <ul>
+            <li><strong>Finish-to-Start (FS):</strong> Activity B cannot start until Activity A is complete (most common)</li>
+            <li><strong>Start-to-Start (SS):</strong> Activity B cannot start until Activity A has started (allows overlapping work)</li>
+            <li><strong>Finish-to-Finish (FF):</strong> Activity B cannot finish until Activity A has finished</li>
+            <li><strong>Start-to-Finish (SF):</strong> Rarely used; B cannot finish until A starts</li>
+          </ul>
+          <p>Each activity has a <strong>duration</strong> (the estimated time required, in working days), an <strong>early start</strong> and <strong>early finish</strong> (forward pass computation), and a <strong>late start</strong> and <strong>late finish</strong> (backward pass computation). The forward and backward pass together yield the critical path and all float values.</p>
+
+          <h2 id="critical-path">Critical Path & Float</h2>
+          <p>The <strong>critical path</strong> is the longest continuous chain of activities through the project network. It equals the project duration. Activities on the critical path have <strong>zero total float</strong> — any slip in a critical activity directly slips the project completion by the same amount.</p>
+          <p>Float (also called "slack") is the schedule flexibility in non-critical activities. It exists because not all activities need to occur exactly in sequence — some can be performed concurrently, and some can start later without affecting the project completion.</p>
+
+          <h2 id="float-types">Total Float vs. Free Float</h2>
+          <p><strong>Total Float (TF)</strong> = Late Start – Early Start = Late Finish – Early Finish. An activity's total float is the time it can be delayed without delaying the project end date. Total float is shared among all activities on a logic chain — using up TF on one activity reduces TF for all subsequent activities in the chain.</p>
+          <p><strong>Free Float (FF)</strong> = Early Start of next activity – Early Finish of current activity. Free float is the time an activity can be delayed without affecting the earliest possible start of any immediately following activity. Unlike total float, free float is private to the activity — using it doesn't affect downstream activities.</p>
+
+          <h2 id="compression">Schedule Compression: Crashing & Fast-Tracking</h2>
+          <p>When the network-calculated project duration exceeds the required completion date, schedule compression is required. Two principal methods:</p>
+          <h3>Fast-Tracking</h3>
+          <p>Fast-tracking overlaps activities that would normally be sequential. Design and construction can overlap; structural work can begin before all architecture drawings are complete; mechanical work can begin in completed structural bays while framing continues in others. Fast-tracking increases risk of rework if later design changes affect earlier constructed work, but may be the only option when schedule recovery is required.</p>
+          <h3>Crashing</h3>
+          <p>Crashing adds resources to critical path activities to reduce their duration — additional crews, overtime shifts, multiple-crane operations, or split work fronts. Crashing has a direct cost premium. Crash cost analysis calculates the marginal daily schedule acceleration cost foreach activity, and applies resources to the cheapest-to-crash critical activities first until the target completion is achieved.</p>
+
+          <h2 id="delay">Delay Analysis Methods</h2>
+          <p>When actual progress deviates from the planned schedule and a delay claim arises, delay analysis reconstructs what happened and who caused it. Common methods:</p>
+          <table class="info-table">
+            <thead><tr><th>Method</th><th>Description</th><th>Best Used When</th></tr></thead>
+            <tbody>
+              <tr><td>As-Planned vs. As-Built</td><td>Compares original planned schedule to actual progress; gap = delay</td><td>Simple projects; contemporaneous records exist</td></tr>
+              <tr><td>Impacted As-Planned (TIA)</td><td>Adds delay events to as-planned schedule to show impact</td><td>Prospective time extension requests during construction</td></tr>
+              <tr><td>Collapsed As-Built</td><td>Removes delay events from as-built schedule to show "but for" duration</td><td>Retrospective analysis; when as-planned is not well-defined</td></tr>
+              <tr><td>Windows Analysis</td><td>Divides project into time windows; analyzes delays event by event</td><td>Complex concurrent delay situations; litigation</td></tr>
+            </tbody>
+          </table>
+
+          <h2 id="software">Scheduling Software</h2>
+          <p><strong>Oracle Primavera P6</strong> is the industry standard for large and complex construction projects. P6 handles resource-loaded schedules, multiple project portfolios, earned value management, and produces industry-standard schedule outputs. It is typically required by owners and general contractors on major public and private projects in NYC.</p>
+          <p><strong>Microsoft Project</strong> is more accessible for smaller projects and teams without P6 expertise. It produces CPM output but lacks the resource and portfolio management depth of P6. For most mid-size renovation and structural projects, MS Project provides adequate schedule management capability.</p>
+
+          <div class="faq-section">
+            <h2 id="faq">Frequently Asked Questions</h2>
+            <div class="faq-item"><div class="faq-question">What is the critical path in a construction schedule?</div><div class="faq-answer"><p>The critical path is the longest sequence of dependent activities from start to finish. Any delay to a critical path activity directly delays project completion by the same duration. Critical path activities have zero total float.</p></div></div>
+            <div class="faq-item"><div class="faq-question">What is the difference between total float and free float?</div><div class="faq-answer"><p>Total float: how much an activity can slip without delaying project completion (shared among the logic chain). Free float: how much an activity can slip without delaying the earliest start of immediately following activities (private to the activity).</p></div></div>
+            <div class="faq-item"><div class="faq-question">What is a construction delay analysis?</div><div class="faq-answer"><p>A forensic reconstruction of a project schedule to determine whether delays occurred, how long they were, and which party caused them. Methods include As-Planned vs. As-Built, Windows Analysis, and Collapsed As-Built. Contemporaneous records are essential for a defensible analysis.</p></div></div>
+            <div class="faq-item"><div class="faq-question">What software should I use for construction scheduling?</div><div class="faq-answer"><p>Primavera P6 for large complex projects (required by most major owners and GCs). Microsoft Project for mid-size projects. Both produce CPM outputs. For delay analysis and litigation, P6 is preferred.</p></div></div>
+          </div>
+
+          <div class="article-cta">
+            <h3>Need Construction Scheduling Services?</h3>
+            <p>Asvakas Engineering provides CPM schedule development, schedule monitoring, and delay analysis for structural projects across New York City.</p>
+            <a href="../contact.html" class="btn btn-solid">Request Scheduling Services</a>
+          </div>
+        </article>
+        <aside class="article-sidebar">
+          <div class="sidebar-cta-box"><h4>Scheduling & Project Controls</h4><p>CPM schedule development, monitoring, and delay analysis for NYC structural projects.</p><a href="../contact.html" class="btn">Get a Quote →</a></div>
+          <div class="sidebar-box"><h4>Related Articles</h4><ul class="related-list">
+            <li><a href="cost-estimation-guide.html">Construction Cost Estimation</a></li>
+            <li><a href="construction-administration-guide.html">Construction Administration</a></li>
+            <li><a href="structural-engineering-guide.html">Structural Engineering Guide</a></li>
+          </ul></div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-body"><div class="container footer-top">
+        <div class="footer-brand-col"><a href="../index.html#top" class="footer-brand"><span class="footer-brand-icon"></span>Asvakas Inc</a>
+          <h4 class="footer-sub-heading">Subscribe for Updates</h4><p class="footer-sub-text">Engineering insights and construction industry updates.</p>
+          <form class="footer-subscribe" onsubmit="return false;"><input type="email" placeholder="Enter your email address" aria-label="Email" /><button type="submit">Subscribe</button></form>
+        </div>
+        <div class="footer-links-wrap">
+          <div class="footer-col"><h5>Company</h5><ul><li><a href="../index.html">Home</a></li><li><a href="../services.html">Services</a></li></ul></div>
+          <div class="footer-col"><h5>Social Media</h5><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li></ul></div>
+          <div class="footer-col"><h5>Blog</h5><ul><li><a href="index.html">All Articles</a></li></ul></div>
+        </div>
+      </div></div>
+      <div class="footer-bottom"><div class="container footer-bottom-inner"><span>© 2026 Asvakas Inc. All Rights Reserved.</span><a href="../privacy-policy.html">Privacy Policy &amp; Terms of Use</a></div></div>
+    </footer>
+    <script src="../script.js"></script>
+    <script>document.querySelectorAll('.faq-question').forEach(q=>{q.addEventListener('click',()=>{q.closest('.faq-item').classList.toggle('open');});});</script>
+    <script src="../region.js"></script>
+  </body>
+</html>

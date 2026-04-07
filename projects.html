@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Asvakas Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body class="projects-page">
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="index.html#top" class="brand">Asvakas<span class="brand-eng">ENG</span></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html#home">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="region-picker" id="regionPicker">
+          <button class="rp-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span class="rp-flag">🇺🇸</span>
+            <span class="rp-label">USA</span>
+            <span class="rp-arrow">▾</span>
+          </button>
+          <ul class="rp-dropdown" role="listbox">
+            <li class="rp-option" data-region="usa" role="option">🇺🇸 USA</li>
+            <li class="rp-option" data-region="canada" role="option">🇨🇦 Canada</li>
+          </ul>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ── INTRO ── -->
+      <section class="proj-intro">
+        <div class="container proj-intro-wrap">
+          <span class="proj-pill fade-up">Our Work</span>
+          <h1 class="fade-up" style="--delay:0.12s">Our Work Across New York City</h1>
+          <p class="fade-up" style="--delay:0.24s">Browse our portfolio of structural engineering projects — from facade inspections to full building design, completed on time and to code.</p>
+        </div>
+      </section>
+
+      <!-- ── RECENT WORK SLIDER ── -->
+      <section class="recent-work">
+        <div class="rw-inner">
+          <div class="rw-top">
+            <span class="proj-pill-dark fade-up">Our Recent Work</span>
+          </div>
+
+          <div class="rw-slider" id="rwSlider">
+
+            <!-- Slide 1 -->
+            <div class="rw-slide active">
+              <div class="rw-img">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=80" alt="High-Line Residential Tower" />
+              </div>
+              <div class="rw-info">
+                <span class="rw-tag">Residential Construction</span>
+                <div class="rw-meta-row">
+                  <span>Ventana Group</span>
+                  <span class="rw-dot">·</span>
+                  <span>Manhattan, NY</span>
+                  <span class="rw-dot">·</span>
+                  <span>2024</span>
+                </div>
+                <h2>High-Line Residential Tower</h2>
+                <p>A 14-story luxury residential building featuring full structural design, DOB permit filing, and custom shoring systems for adjacent historic structures. Completed ahead of schedule with zero structural punch-list items.</p>
+                <a href="contact.html" class="rw-btn">Inquire About This Project →</a>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="rw-slide">
+              <div class="rw-img">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80" alt="Brooklyn Mixed-Use Complex" />
+              </div>
+              <div class="rw-info">
+                <span class="rw-tag">Commercial Development</span>
+                <div class="rw-meta-row">
+                  <span>Harbor Partners LLC</span>
+                  <span class="rw-dot">·</span>
+                  <span>Brooklyn, NY</span>
+                  <span class="rw-dot">·</span>
+                  <span>2024</span>
+                </div>
+                <h2>Brooklyn Mixed-Use Complex</h2>
+                <p>A six-story mixed-use development with structural steel framing, concrete core design, and full DOB filing package. Included Local Law 11 facade specifications and construction monitoring through topping-out.</p>
+                <a href="contact.html" class="rw-btn">Inquire About This Project →</a>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="rw-slide">
+              <div class="rw-img">
+                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1400&q=80" alt="Midtown Office Retrofit" />
+              </div>
+              <div class="rw-info">
+                <span class="rw-tag">Renovation & Retrofit</span>
+                <div class="rw-meta-row">
+                  <span>Park Ave Holdings</span>
+                  <span class="rw-dot">·</span>
+                  <span>Midtown, NY</span>
+                  <span class="rw-dot">·</span>
+                  <span>2025</span>
+                </div>
+                <h2>Midtown Office Structural Retrofit</h2>
+                <p>Complete structural analysis and retrofit of a 1960s office tower in Midtown Manhattan. Included beam replacement, column reinforcement, and updated facade attachment system per current NYC code requirements.</p>
+                <a href="contact.html" class="rw-btn">Inquire About This Project →</a>
+              </div>
+            </div>
+
+          </div><!-- /.rw-slider -->
+
+          <div class="rw-dots-bar">
+            <button class="rw-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="rw-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="rw-dot" data-index="2" aria-label="Slide 3"></button>
+          </div>
+
+        </div><!-- /.rw-inner -->
+      </section>
+
+      <!-- ── FEATURED PROJECTS ── -->
+      <section class="featured-proj section">
+        <div class="container">
+          <div class="fp-header">
+            <span class="proj-pill fade-up">Featured Projects</span>
+            <h2 class="fade-up" style="--delay:0.1s">Highlighted Work</h2>
+          </div>
+          <div class="fp-grid">
+
+            <article class="fp-card fade-up" style="--delay:0.05s">
+              <div class="fp-img">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Hudson Yards Structural Assessment" />
+                <span class="fp-tag">Structural Engineering</span>
+              </div>
+              <div class="fp-body">
+                <div class="fp-meta">
+                  <span>StoneCore Real Estate</span>
+                  <span class="fp-dot">·</span>
+                  <span>Hudson Yards, NYC</span>
+                  <span class="fp-dot">·</span>
+                  <span>2024</span>
+                </div>
+                <h3>Hudson Yards Assessment</h3>
+                <a href="contact.html" class="fp-link">See Details →</a>
+              </div>
+            </article>
+
+            <article class="fp-card fade-up" style="--delay:0.13s">
+              <div class="fp-img">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Queens Facade Inspection" />
+                <span class="fp-tag">Local Law 11</span>
+              </div>
+              <div class="fp-body">
+                <div class="fp-meta">
+                  <span>City of New York</span>
+                  <span class="fp-dot">·</span>
+                  <span>Queens, NY</span>
+                  <span class="fp-dot">·</span>
+                  <span>2025</span>
+                </div>
+                <h3>Queens Facade Program</h3>
+                <a href="contact.html" class="fp-link">See Details →</a>
+              </div>
+            </article>
+
+            <article class="fp-card fade-up" style="--delay:0.21s">
+              <div class="fp-img">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80" alt="Jersey City Mixed-Use" />
+                <span class="fp-tag">Mixed-Use</span>
+              </div>
+              <div class="fp-body">
+                <div class="fp-meta">
+                  <span>Horizon Group</span>
+                  <span class="fp-dot">·</span>
+                  <span>Jersey City, NJ</span>
+                  <span class="fp-dot">·</span>
+                  <span>2024</span>
+                </div>
+                <h3>Jersey City Mixed-Use</h3>
+                <a href="contact.html" class="fp-link">See Details →</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PORTFOLIO GRID ── -->
+      <section class="portfolio-section" id="portfolio">
+        <div class="container">
+          <div class="port-header">
+            <span class="proj-pill fade-up">Our Portfolio</span>
+            <h2 class="fade-up" style="--delay:0.1s">Our Diverse Project Portfolio</h2>
+          </div>
+          <div class="port-filters fade-up" style="--delay:0.18s" role="group" aria-label="Filter projects">
+            <button class="filt active" data-filter="all">All Projects</button>
+            <button class="filt" data-filter="structural">Structural Engineering</button>
+            <button class="filt" data-filter="inspections">Local Law Inspections</button>
+            <button class="filt" data-filter="residential">Residential</button>
+            <button class="filt" data-filter="renovation">Renovation</button>
+            <button class="filt" data-filter="commercial">Commercial</button>
+          </div>
+          <div class="port-grid">
+
+            <article class="port-card fade-up" data-cat="residential" style="--delay:0.05s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Park Slope Brownstone" />
+                <span class="port-tag">Residential</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Park Slope Brownstone</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="commercial" style="--delay:0.1s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=700&q=80" alt="Sunset Park Warehouse" />
+                <span class="port-tag">Commercial</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Sunset Park Warehouse</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="renovation" style="--delay:0.15s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1565793993862-09dccc69ccfe?auto=format&fit=crop&w=700&q=80" alt="Chelsea Loft Conversion" />
+                <span class="port-tag">Renovation</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Chelsea Loft Conversion</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="residential" style="--delay:0.2s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=700&q=80" alt="Upper East Side Penthouse" />
+                <span class="port-tag">Residential</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Upper East Side Penthouse</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="structural" style="--delay:0.25s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=700&q=80" alt="Financial District Tower" />
+                <span class="port-tag">Structural Engineering</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Financial District Tower</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="structural" style="--delay:0.3s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=700&q=80" alt="Tribeca Structural Retrofit" />
+                <span class="port-tag">Structural Engineering</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Tribeca Structural Retrofit</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="inspections" style="--delay:0.35s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=700&q=80" alt="Midtown Facade Inspection LL11" />
+                <span class="port-tag">Local Law 11</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>Midtown LL11 FISP Inspection</h4>
+            </article>
+
+            <article class="port-card fade-up" data-cat="inspections" style="--delay:0.4s">
+              <div class="port-img">
+                <img src="https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?auto=format&fit=crop&w=700&q=80" alt="Long Island City Parking Structure LL126" />
+                <span class="port-tag">Local Law 126</span>
+                <a href="contact.html" class="port-overlay-btn">See Details →</a>
+              </div>
+              <h4>LIC Parking Structure — LL126 PSIP</h4>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── MINI CTA ── -->
+      <section class="proj-mini-cta">
+        <div class="proj-mini-left slide-left">
+          <h2>Ready to Build Something Remarkable?</h2>
+          <p>Let's discuss your project. Our team delivers precision-engineered solutions for NYC's most demanding builds.</p>
+          <a href="contact.html" class="proj-mini-btn">Start a Project →</a>
+        </div>
+        <div class="proj-mini-right slide-right">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Construction work" />
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-body">
+        <div class="container footer-top">
+          <div class="footer-brand-col">
+            <a href="index.html#top" class="footer-brand">
+              <span class="footer-brand-icon"></span>
+              Asvakas Inc
+            </a>
+            <h4 class="footer-sub-heading">Subscribe for Updates</h4>
+            <p class="footer-sub-text">Get engineering insights, NYC compliance updates, and industry news delivered to your inbox.</p>
+            <form class="footer-subscribe" onsubmit="return false;">
+              <input type="email" placeholder="Enter your email address" aria-label="Email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-links-wrap">
+            <div class="footer-col">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#process">Process</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Social Media</h5>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter/X</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Support</h5>
+              <ul>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog/index.html">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <span>© 2026 Asvakas Inc. All Rights Reserved.</span>
+          <a href="privacy-policy.html">Privacy Policy &amp; Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      /* ── Scroll animation observer ── */
+      const animObs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('in-view'); animObs.unobserve(e.target); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-up, .slide-left, .slide-right').forEach(el => animObs.observe(el));
+
+      /* ── Recent Work Slider ── */
+      const rwSlides = document.querySelectorAll('.rw-slide');
+      const rwDots   = document.querySelectorAll('.rw-dot');
+      let rwCurrent  = 0, rwTimer;
+
+      function rwGoTo(n) {
+        rwSlides[rwCurrent].classList.remove('active');
+        rwDots[rwCurrent].classList.remove('active');
+        rwCurrent = (n + rwSlides.length) % rwSlides.length;
+        rwSlides[rwCurrent].classList.add('active');
+        rwDots[rwCurrent].classList.add('active');
+      }
+
+      function rwAutoplay() { rwTimer = setInterval(() => rwGoTo(rwCurrent + 1), 5000); }
+
+      rwDots.forEach(d => d.addEventListener('click', () => {
+        clearInterval(rwTimer);
+        rwGoTo(+d.dataset.index);
+        rwAutoplay();
+      }));
+      rwAutoplay();
+
+      /* ── Portfolio filter ── */
+      const filts = document.querySelectorAll('.filt');
+      const portCards = document.querySelectorAll('.port-card');
+      filts.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filts.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const f = btn.dataset.filter;
+          portCards.forEach(c => {
+            const show = f === 'all' || c.dataset.cat === f;
+            c.style.opacity = show ? '1' : '0.25';
+            c.style.pointerEvents = show ? '' : 'none';
+            c.style.transform = show ? 'scale(1)' : 'scale(0.97)';
+          });
+        });
+      });
+    </script>
+    <script src="region.js"></script>
+  </body>
+</html>

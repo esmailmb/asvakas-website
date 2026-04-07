@@ -1,0 +1,83 @@
+/* ── Canada-specific overrides ── */
+
+/* Language toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(39,52,70,0.18);
+  border-radius: 2rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lang-opt {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #4f5968;
+  padding: 0.28rem 0.65rem;
+  transition: background 0.18s, color 0.18s;
+  line-height: 1.6;
+}
+
+.lang-opt:first-child {
+  border-right: 1px solid rgba(39,52,70,0.18);
+}
+
+.lang-opt.active {
+  background: var(--navy, #141e2d);
+  color: #fff;
+}
+
+.lang-opt:hover:not(.active) {
+  background: rgba(39,52,70,0.07);
+}
+
+/* White on dark hero — home page AND all other non-scrolled Canada headers */
+.site-header:not(.scrolled) .lang-toggle {
+  border-color: rgba(255,255,255,0.35);
+}
+
+.site-header:not(.scrolled) .lang-opt {
+  color: rgba(255,255,255,0.75);
+}
+
+.site-header:not(.scrolled) .lang-opt:first-child {
+  border-right-color: rgba(255,255,255,0.35);
+}
+
+.site-header:not(.scrolled) .lang-opt.active {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* Keep legacy home-page selectors as aliases */
+.home-page .site-header:not(.scrolled) .lang-toggle {
+  border-color: rgba(255,255,255,0.35);
+}
+
+.home-page .site-header:not(.scrolled) .lang-opt {
+  color: rgba(255,255,255,0.75);
+}
+
+.home-page .site-header:not(.scrolled) .lang-opt:first-child {
+  border-right-color: rgba(255,255,255,0.35);
+}
+
+.home-page .site-header:not(.scrolled) .lang-opt.active {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .lang-toggle { display: none; }
+}
+
+/* Keep region-picker flush next to the lang toggle — no extra auto margin */
+.region-picker {
+  margin-left: 0.6rem;
+}
