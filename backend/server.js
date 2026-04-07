@@ -57,7 +57,7 @@ app.post("/submit", async function (req, res) {
     .map(function ([k, v]) { return k + ": " + v; })
     .join("\n");
 
-  const fromEmail = process.env.FROM_EMAIL || "contact@asvakas.com";
+  const fromEmail = process.env.FROM_EMAIL || "info@asvakas.com";
 
   try {
     const { error } = await resend.emails.send({
