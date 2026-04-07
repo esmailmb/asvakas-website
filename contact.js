@@ -42,8 +42,7 @@ if (contactForm) {
     });
 
     try {
-      /* ← After deploying to Render, replace the URL below with your Render service URL */
-      const res = await fetch("https://YOUR_RENDER_SERVICE.onrender.com/submit", {
+      const res = await fetch("https://asvakas-backend.onrender.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(data)
