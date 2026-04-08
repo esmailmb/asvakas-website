@@ -9,6 +9,9 @@ const app    = express();
 const PORT   = process.env.PORT || 3000;
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+/* ── Trust Render's reverse proxy (fixes express-rate-limit X-Forwarded-For error) ── */
+app.set("trust proxy", 1);
+
 /* ── Body parsing ── */
 app.use(express.json({ limit: "32kb" }));
 
